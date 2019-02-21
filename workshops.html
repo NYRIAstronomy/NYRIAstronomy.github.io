@@ -4,4 +4,13 @@ title:  "NYRIA | Workshops"
 permalink: /workshops/
 ---
 
-Workshops...
+This is an overview of the past workshops...
+<ul>
+  <li>dummy element</li>
+  {% for workshop in site.workshops %}
+    <li>
+      <a href="{{ member.url }}">{{ workshop.year }}</a>
+    </li>
+  {% endfor %}
+  <li>dummy element</li>
+</ul>
