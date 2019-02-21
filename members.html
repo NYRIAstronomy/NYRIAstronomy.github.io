@@ -4,4 +4,14 @@ title:  "NYRIA | Members"
 permalink: /members/
 ---
 
-Members...
+NYRIA is a network of young astronomers from all around the world!
+
+<ul>
+  <li>dummy element</li>
+  {% for member in site.members %}
+    <li class="member">
+      <a href="{{ member.url }}">{{ member.name }}</a>
+    </li>
+  {% endfor %}
+  <li>dummy element</li>
+</ul>
