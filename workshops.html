@@ -9,7 +9,7 @@ This is an overview of the past workshops...
   <li>dummy element</li>
   {% for workshop in site.workshops %}
     <li>
-      <a href="{{ member.url }}">{{ workshop.year }}</a>
+      <a href="{{ workshop.url }}">{{ workshop.year }} in {{ workshop.location }}</a>
     </li>
   {% endfor %}
   <li>dummy element</li>
