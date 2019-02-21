@@ -5,3 +5,10 @@ permalink: /jobs/
 ---
 
 Jobs...
+<ul>
+  {% for job in site.jobs %}
+    <li>
+      <a href="{{ job.url }}">{{ job.title }} in {{ job.location }}</a>
+    </li>
+  {% endfor %}
+</ul>
