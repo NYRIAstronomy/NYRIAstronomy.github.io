@@ -11,3 +11,8 @@ collections:
     output          : true
   members:
     output          : true
+    people          : true
+  workshops:
+    output          : true
+  jobs:
+    output          : true
