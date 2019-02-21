@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Dummy title"
-permalink: /news/
+permalink: {{ page.url | remove: ".html" | prepend: "/news/" }}
 ---
 
 <h1>Headline</h1>
