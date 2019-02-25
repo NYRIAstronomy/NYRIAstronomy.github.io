@@ -7,6 +7,23 @@ permalink: /members/
 NYRIA is a network of young astronomers from all around the world!
 
 <h1>Members</h1>
+<table class="members">
+  {% for member in site.members %}
+    <tr>
+      <td class="members-image">{{ member.image_path }}</td>
+      <td class="members-content">
+        <ul>
+          <li><b>Name:</b> {{ member.name }} </li>
+          <li><b>Affiliation:</b> {{ member.affiliation }} </li>
+          <li><b>Subjects:</b> {{ member.subjects }} </li>
+          <li><b>Keywords:</b> {{ member.keywords }} </li>
+          <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a>{{ member.email }} </li>
+        </ul>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+
 <ul>
   {% for member in site.members %}
     <li>

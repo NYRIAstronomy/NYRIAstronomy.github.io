@@ -58,6 +58,25 @@
   font-size: 14pt;
 }
 
-.member {}
+.members {
+  width: 100%;
+  border-collapse: collapse;
+}
+.members tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.members td {
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+.members-image {
+  width: 30%;
+}
+.members-content {
+  width: 70%;
+}
+.members-content ul {
+  list-style-type: none;
+}
 .post {}
 .workshop {}
