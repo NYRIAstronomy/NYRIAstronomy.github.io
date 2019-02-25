@@ -96,3 +96,25 @@
   border: 1px solid #dddddd;
   text-align: left;
 }
+
+.jobs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.jobs-table tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+.jobs-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+.jobs-table-date {
+  width: 20%;
+  text-align: center;
+}
+.jobs-table-content {
+  width: 80%;
+}
+.jobs-table-content ul {
+  list-style-type: none;
+}
