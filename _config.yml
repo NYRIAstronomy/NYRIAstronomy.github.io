@@ -11,6 +11,8 @@ collections:
     output          : true
   jobs:
     output          : true
+  links:
+    output          : true
   members:
     output          : true
     people          : true
