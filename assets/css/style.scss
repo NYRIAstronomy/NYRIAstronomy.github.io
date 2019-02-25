@@ -62,7 +62,7 @@
   width: 100%;
   border-collapse: collapse;
 }
-.members tr:nth-child(even) {
+.members tr:nth-child(odd) {
   background-color: #dddddd;
 }
 .members td {
@@ -71,6 +71,10 @@
 }
 .members-image {
   width: 30%;
+  text-align: left;
+}
+.members-image img {
+  width: 90%;
 }
 .members-content {
   width: 70%;
