@@ -58,29 +58,41 @@
   font-size: 14pt;
 }
 
-.members {
+.post-table {}
+
+.member-table {
   width: 100%;
   border-collapse: collapse;
 }
-.members tr:nth-child(odd) {
+.member-table tr:nth-child(odd) {
   background-color: #dddddd;
 }
-.members td {
+.member-table td {
   border: 1px solid #dddddd;
   text-align: left;
 }
-.members-image {
+.member-table-image {
   width: 20%;
   text-align: center;
 }
-.members-image img {
+.member-table-image img {
   width: 80%;
 }
-.members-content {
+.member-table-content {
   width: 70%;
 }
-.members-content ul {
+.member-table-content ul {
   list-style-type: none;
 }
-.post {}
-.workshop {}
+
+.workshop-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.workshop-table tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+.workshop-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+}

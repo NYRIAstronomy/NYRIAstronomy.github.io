@@ -4,11 +4,15 @@ title:  "Workshops"
 permalink: /workshops/
 ---
 
-This is an overview of the past workshops...
-<ul>
-  {% for workshop in site.workshops %}
-    <li>
-      <a href="{{ workshop.url }}">{{ workshop.year }} in {{ workshop.location }}</a>
-    </li>
+<table class="workshop-table">
+  <tr>
+    <th>Year</th>
+    <th>Location</th>
+  </tr>
+  {% for workshop in site.workshops reversed %}
+    <tr>
+      <td><a href="{{ workshop.url }}">{{ workshop.year }}</a></td>
+      <td><a href="{{ workshop.url }}">{{ workshop.location }}</td>
+    </tr>
   {% endfor %}
-</ul>
+</table>
