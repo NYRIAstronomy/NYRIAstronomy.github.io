@@ -10,10 +10,10 @@ NYRIA is a network of young astronomers from all around the world!
 <table class="members">
   {% for member in site.members %}
     <tr>
-      <td class="members-image"> <img src="{{ member.image_path }}"> </td>
+      <td class="members-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}"></a> </td>
       <td class="members-content">
         <ul>
-          <li><b>Name:</b> {{ member.name }} </li>
+          <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
           <li><b>Affiliation:</b> {{ member.affiliation }} </li>
           <li><b>Subjects:</b> {{ member.subjects }} </li>
           <li><b>Keywords:</b> {{ member.keywords }} </li>
