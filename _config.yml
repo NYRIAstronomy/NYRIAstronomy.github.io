@@ -7,12 +7,14 @@ layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
 collections:
-  posts:
+  events:
+    output          : true
+  jobs:
     output          : true
   members:
     output          : true
     people          : true
-  workshops:
+  posts:
     output          : true
-  jobs:
+  workshops:
     output          : true
