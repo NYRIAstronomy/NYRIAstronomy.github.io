@@ -4,11 +4,26 @@ title:  "Jobs"
 permalink: /jobs/
 ---
 
-Jobs...
-<ul>
+<h1>Job offers</h1>
+<p>
+In general, international job offers for post-doctoral positions are posted on <a href="https://jobregister.aas.org/">https://jobregister.aas.org/</a>.
+Here we list an excerpt of job announcements related to astronomical instrumentation.
+</p>
+
+<table class="jobs-table">
+  <tr>
+    <th>Due date</th>
+    <th>Decription</th>
+  </tr>
   {% for job in site.jobs %}
-    <li>
-      <a href="{{ job.url }}">{{ job.title }} in {{ job.location }}</a>
-    </li>
+    <td>{{ job.due_date }}</td>
+    <td>
+      <h3><a href="{{ job.url }}">{{ job.title }}</a></h3>
+      <ul>
+        <li>{{ job.position }} at {{ job.location }}</li>
+        <li>{{ job.contact }} (<a href="mailto:{{ job.email }}"></a>{{ job.email }})</li>
+        <li><a href="{{ job.link }}"></a>{{ job.link }}</li>
+      </ul>
+    </td>
   {% endfor %}
-</ul>
+</table>
