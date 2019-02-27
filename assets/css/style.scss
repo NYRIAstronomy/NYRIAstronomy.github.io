@@ -51,8 +51,10 @@
 }
 
 .site-footer {
+  position: static;
+  bottom: 0;
   text-align: center;
-  background-color: black;  
+  background-color: black;
   color: white;
 }
 
