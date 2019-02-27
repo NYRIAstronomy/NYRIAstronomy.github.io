@@ -33,6 +33,7 @@
 .page-header ul {
   float: right;
   display: inline;
+  background-color: grey;
 }
 .page-header li {
   display: inline;
@@ -105,6 +106,19 @@
 .link-matrix-box {
   margin-top: 8px;
   vertical-align: middle;
+  border: 1px solid #dddddd;
+}
+.link-matrix-box img:hover {
+  opacity: 0.5;
+}
+.link-matrix-box p {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  background-color: red;
+  border: 5px solid red;
 }
 
 .post-table {}
