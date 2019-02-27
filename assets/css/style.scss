@@ -98,22 +98,22 @@
 
 /* ---------- particular design classes ---------- */
 
+.flexible-matrix {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 .link-box {
   position: relative;
-  width: 30%;
   height: 200px;
-  padding: 20px;
+  margin: 20px;
   display: inline-block;
-	
-  border: 1px solid black;
+
+  border: 1px solid #bbb;
   border-radius: 10px;
-  background-color: grey;
+  background-color: #ccc;
 }
 .link-box img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   height: 100%;
 }
 .link-box:hover {
@@ -133,47 +133,6 @@
 .link-box a {
   color: white;
   text-decoration: none;
-}
-
-.post-table {}
-
-.member-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.member-table tr:nth-child(odd) {
-  background-color: #dddddd;
-}
-.member-table td {
-  border: 1px solid #dddddd;
-  text-align: left;
-}
-.member-table-image {
-  width: 20%;
-  text-align: center;
-}
-.member-table-image img {
-  width: 80%;
-}
-.member-table-content {
-  width: 70%;
-}
-.member-table-content ul {
-  list-style-type: none;
-}
-
-.workshop-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 14;
-}
-.workshop-table tr:nth-child(odd) {
-  background-color: #dddddd;
-}
-.workshop-table td {
-  border: 1px solid #dddddd;
-  text-align: left;
 }
 
 .jobs-table {
