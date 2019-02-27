@@ -22,8 +22,11 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">NYRIA</h1>
-      <h3 class="project-name">Network of Young Researchers in Instrumentation for Astronomy</h3>
+      <a href="index.html">
+        <img src="/assets/img/NYRIA_Logo_small.png" alt="">
+        <h1 class="project-name">NYRIA</h1>
+        <h3 class="project-name">Network of Young Researchers in Instrumentation for Astronomy</h3>
+      </a>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
@@ -34,7 +37,7 @@
       {% endif %}
 
       <ul>
-        <li><a href="/../index.html">News</a></li>
+        <li><a href="/../news/">News</a></li>
         <li><a href="/../about/">About</a></li>
         <li><a href="/../members/">Members</a></li>
         <li><a href="/../workshops/">Workshops</a></li>
