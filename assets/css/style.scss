@@ -100,12 +100,18 @@
 
 .link-box {
   position: relative;
-  width: 20%;
+  width: 30%;
   height: 200px;
   padding: 5px;
   display: inline-block;
+	
+  border: 1px solid grey;
 }
 .link-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 100%;
 }
 .link-box:hover {
