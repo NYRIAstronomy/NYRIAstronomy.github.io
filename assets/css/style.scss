@@ -105,7 +105,9 @@
   padding: 20px;
   display: inline-block;
 	
-  border: 1px solid grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: grey;
 }
 .link-box img {
   position: absolute;
