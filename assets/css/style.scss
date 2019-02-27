@@ -88,35 +88,23 @@
 /* ---------- particular design classes ---------- */
 
 .link-matrix-row {
+  display: -ms-flexbox; /* IE 10 */
   display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
 .link-matrix-column {
+  -ms-flex: 25%; /* IE 10 */
   flex: 25%;
-  max-width: 25%;
   padding: 0 4px;
 }
-.link-matrix-column a {
+.link-matrix-column img {
   margin-top: 8px;
   vertical-align: middle;
 }
-.link-matrix-box {
-  vertical-align: middle;
-  width: 30%;
-  color: red;
-  order: 1px solid #dddddd;
-}
-.link-matrix-box img {
-  width: 100%;
-}
-.link-matrix-box p {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: inherit;
-  text-align: center;
-}
+
+
 
 .post-table {}
 
