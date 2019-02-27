@@ -21,7 +21,12 @@
   color: red;
   opacity: .8;
 }
+.page-header img {
+  width: 2cm;
+}
 .page-header h1 h2 {
+  position: relative;
+  left: 2cm;
   color: red;
 }
 .page-header ul {
