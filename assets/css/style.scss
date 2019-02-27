@@ -67,7 +67,7 @@
 /* ---------- general design: footer ---------- */
 
 .site-footer {
-  position: relative;
+  position: static;
 	bottom:0;
 	width:100%;
 	height:60px;
@@ -76,9 +76,8 @@
   color: white;
 }
 .site-footer a {
-  color: black;
+  color: white;
 }
-
 .site-footer-credits {
   text-align: inherit;
   font-size: 14pt;
