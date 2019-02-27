@@ -14,11 +14,12 @@ permalink: /workshops/
       </a>
     </div>
     <h1>Past workshops</h1>
+  {% else %}
+    <div class="link-box">
+      <a href="{{ workshop.url }}">
+        <img src="{{ workshop.image_path }}" alt="">
+        <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
+      </a>
+    </div>
   {% endif %}
-  <div class="link-box">
-    <a href="{{ workshop.url }}">
-      <img src="{{ workshop.image_path }}" alt="">
-      <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
-    </a>
-  </div>
 {% endfor %}
