@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+/* ---------- general design: header ---------- */
+
 .page-header {
   top: 0;
   left: 0;
@@ -40,6 +42,9 @@
   border: 5px solid grey;
 }
 
+
+/* ---------- general design: body ---------- */
+
 .main-content {
   padding-top: 150px;
   padding-left: 15%;
@@ -50,6 +55,8 @@
   color: black;
 }
 
+/* ---------- general design: footer ---------- */
+
 .site-footer {
   position: static;
   bottom: 0;
@@ -58,9 +65,36 @@
   color: white;
 }
 
+.site-footer a {
+  color: black;
+}
+
 .site-footer-credits {
   text-align: inherit;
   font-size: 14pt;
+}
+
+/* ---------- particular design classes ---------- */
+
+.link-matrix {
+  text-align: justify;
+}
+
+.link-box {
+  position: relative;
+  text-align: center;
+  color: red;
+  width: 30%;
+}
+.link-box img {
+  width: 100%;
+}
+.link-box p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: inherit;
 }
 
 .post-table {}
