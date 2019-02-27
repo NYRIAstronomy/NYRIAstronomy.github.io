@@ -3,23 +3,28 @@ layout: default
 title:  "Workshops"
 permalink: /workshops/
 ---
+<h1>The upcoming workshop</h1>
 
-{% for workshop in site.workshops reversed %}
-  {% if forloop.first %}
-    <h1>The next workshop</h1>
-    <div class="link-box">
-      <a href="{{ workshop.url }}">
-        <img src="{{ workshop.image_path }}" alt="">
-        <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
-      </a>
-    </div>
-    <h1>Past workshops</h1>
-  {% else %}
-    <div class="link-box">
-      <a href="{{ workshop.url }}">
-        <img src="{{ workshop.image_path }}" alt="">
-        <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
-      </a>
-    </div>
-  {% endif %}
-{% endfor %}
+{% assign workshop = site.workshops[0]%}
+<div class="link-box">
+  <a href="{{ workshop.url }}">
+    <img src="{{ workshop.image_path }}" alt="">
+    <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
+  </a>
+</div>
+
+<h1>Past workshops</h1>
+
+<div class="flexible-matrix">
+  {% for workshop in site.workshops reversed %}
+    {% if forloop.first %}
+      {% break %}
+    {% endif %}
+      <div class="link-box">
+        <a href="{{ workshop.url }}">
+          <img src="{{ workshop.image_path }}" alt="">
+          <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
+        </a>
+      </div>
+  {% endfor %}
+</div>
