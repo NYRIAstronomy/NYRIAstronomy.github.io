@@ -53,6 +53,7 @@
 
 .main-content {
   position: relative;
+  top: 4cm;
   //padding-top: 150px;
   padding-left: 15%;
   padding-right: 15%;
@@ -66,13 +67,12 @@
 /* ---------- general design: footer ---------- */
 
 .site-footer {
-  position: static;
+  position: sticky;
   bottom: 0;
   text-align: center;
   background-color: black;
   color: white;
 }
-
 .site-footer a {
   color: black;
 }
@@ -94,6 +94,10 @@
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+}
+.link-matrix-column a {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 .link-box {
   vertical-align: middle;
