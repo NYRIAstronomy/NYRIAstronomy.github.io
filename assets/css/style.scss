@@ -78,6 +78,7 @@
 /* ---------- general design: footer ---------- */
 
 .site-footer {
+  clear: both;
   position: static;
 	bottom:0;
 	width:100%;
@@ -114,10 +115,13 @@
   vertical-align: middle;
 }
 .link-box {
-  width: 100%;
+  width: inherit;
   margin-top: 8px;
   vertical-align: middle;
   border: 1px solid #dddddd;
+}
+.link-box img {
+  opacity: 0.8;
 }
 .link-box img:hover {
   opacity: 0.5;
