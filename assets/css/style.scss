@@ -22,11 +22,12 @@
   opacity: .8;
 }
 .page-header img {
-  width: 2cm;
+  width: 100px;
 }
 .page-header h1 h2 {
   position: relative;
-  left: 2cm;
+  top: 18px;
+  left: 100px;
   color: red;
 }
 .page-header ul {
@@ -60,6 +61,7 @@
   color: black;
 }
 
+
 /* ---------- general design: footer ---------- */
 
 .site-footer {
@@ -78,6 +80,7 @@
   text-align: inherit;
   font-size: 14pt;
 }
+
 
 /* ---------- particular design classes ---------- */
 
