@@ -5,7 +5,7 @@ permalink: /workshops/
 ---
 <h1>The upcoming workshop</h1>
 
-{% assign workshop = site.workshops[0]%}
+{% assign workshop = site.workshops.last %}
 <div class="link-box">
   <a href="{{ workshop.url }}">
     <img src="{{ workshop.image_path }}" alt="">
@@ -18,7 +18,7 @@ permalink: /workshops/
 <div class="flexible-matrix">
   {% for workshop in site.workshops reversed %}
     {% if forloop.first %}
-      {% break %}
+      {% continue %}
     {% endif %}
       <div class="link-box">
         <a href="{{ workshop.url }}">
