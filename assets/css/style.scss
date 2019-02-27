@@ -31,11 +31,12 @@
 }
 .page-header a {
   color: red;
+  text-decoration: none;
 }
 
 .page-header-navigation{
-  clear: both;
-  float: right;
+  position: relative;
+  right: 0;
   z-index: -1;
 }
 .page-header-navigation ul {
