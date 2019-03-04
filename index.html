@@ -7,9 +7,9 @@ title:  "Network of Young Researchers in Instrumentation for Astronomy"
 <div class="slideshow-container">
   {% for post in site.posts %}
     {% if forloop.first %}
-        <img class="slideshow-element" src="{{ post.image_path }}" alt="" style="display: block">
+        <img class="slideshow-element" src="{{ post.image }}" alt="" style="display: block">
     {% else %}
-        <img class="slideshow-element" src="{{ post.image_path }}" alt="">
+        <img class="slideshow-element" src="{{ post.image }}" alt="">
     {% endif %}
     {% if forloop.index0 == 5 %}
       {% break %}
