@@ -85,9 +85,10 @@
 /* ---------- general design: footer ---------- */
 
 .site-footer {
-  clear: both;
-  position: static;
-	bottom:0;
+  display: block;
+  !clear: both;
+  !position: static;
+	!bottom:0;
 	width:100%;
 	height:60px;
   text-align: center;
