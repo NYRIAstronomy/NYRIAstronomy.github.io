@@ -3,15 +3,12 @@ layout: default
 title:  "Workshops"
 permalink: /workshops/
 ---
-<h1>The upcoming workshop</h1>
 
 {% assign workshop = site.workshops.last %}
-<div class="link-box">
-  <a href="{{ workshop.url }}">
-    <img src="{{ workshop.image_path }}" alt="">
-    <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
-  </a>
-</div>
+<a href="{{ workshop.url }}" style="width:100%;">
+  <img src="{{ workshop.image_path }}" alt="">
+  <div class="center-left">{{ workshop.year }}<br>{{ workshop.location }}</div>
+</a>
 
 <h1>Past workshops</h1>
 
