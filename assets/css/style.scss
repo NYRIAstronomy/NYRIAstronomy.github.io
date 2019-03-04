@@ -101,6 +101,10 @@
 
 /* ---------- particular design classes ---------- */
 
+h1 h2 h3 h4 h5 h6 {
+  text-align: center;
+}
+
 .slideshow-container {
   width: 100%;
   position: relative;
@@ -204,6 +208,7 @@
 
 .table {
   width: 100%;
+  margin: 10px;
   border-collapse: collapse;
 }
 .table tr:nth-child(odd) {
