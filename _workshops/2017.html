@@ -6,7 +6,8 @@ permalink: /workshops/2017/
 year: 2017
 location: "Paris"
 country: FR
-image_path: /assets/img/workshops/2017/Group_Picture_small.jpg
+image_path: /assets/img/workshops/2017/
+image: {{ image_path | append : "Group_Picture_small.jpeg"}}
 ---
 
 <h1>NYRIA workshop 2017 in Paris</h1>
@@ -19,9 +20,11 @@ image_path: /assets/img/workshops/2017/Group_Picture_small.jpg
 </p>
 
 <p>
-  <img src="/assets/img/workshops/2017/Group_Picture_small.jpg" alt="">
+  <img src="/assets/img/workshops/2017/Group_Picture_small.jpeg" alt="">
   The attendees at the entrance of the 'Chateau' in the sunny Meudon observatory
 </p>
+<img src="{{ image_path | append : "Group_Picture_small.jpeg"}}" alt="">
+<img src="{{ image_path | append : "20170516_155428.jpg"}}" alt="">
 
 <h3>Summary of the activities:</h3>
 <p>
