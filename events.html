@@ -11,15 +11,16 @@ permalink: /events/
     <tr>
       <td class="jobs-table-content">
         <a href="{{ event.link }}">
-        <h3>{{ event.title }}</h3>
+          <h3>{{ event.title }}</h3>
+        </a>
         <ul>
           <li><b>Location:</b> {{ event.location }}</li>
           <li><b>Dates:</b> {{ event.dates }}, {{ event.year }}</li>
-          <li><b>Link:</b> {{ event.link }}</li>
+          <li><b>Link:</b> <a href="{{ event.link }}">{{ event.link }}</a></li>
           <li><b>Application deadline:</b> {{ event.deadline }}</li>
         </ul>
-        </a>
-      </td>      
+
+      </td>
     </tr>
   {% endfor %}
 </table>
