@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-
     <header class="page-header" role="banner">
       <a href="/../index.html">
         <img src="/assets/img/NYRIA_Logo_small.png" alt="">
@@ -49,18 +48,14 @@
         </ul>
       </div>
     </header>
-
-
     <main id="content" class="main-content" role="main">
       {{ content }}
     </main>
-
     <footer class="site-footer">
       {% if site.github.is_project_page %}
         <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
       {% endif %}
       <span class="site-footer-credits">Copyright &copy; 2019 NYRIA &mdash; <a href="/../impressum/">Impressum</a> &mdash; <a href="/../contact/">Contact</a></span>
     </footer>
-
   </body>
 </html>
