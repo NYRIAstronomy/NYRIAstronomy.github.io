@@ -94,7 +94,7 @@ html, body {
 /* ---------- general design: footer ---------- */
 
 .site-footer {
-  z-index: -3;
+  z-index: -10;
 	width: 100%;
 	height: 60px;
   text-align: center;
@@ -102,9 +102,11 @@ html, body {
   color: white;
 }
 .site-footer a {
+  z-index: -10;
   color: white;
 }
 .site-footer-credits {
+  z-index: -10;
   text-align: inherit;
   font-size: 14pt;
 }
@@ -204,8 +206,8 @@ html, body {
   text-align: center;
   transform: translate(-50%, -50%);
 
-  background-color: red;
-  border: 10px solid red;
+  background-color: transparent;
+  border: 10px solid transparent;
   border-radius: 10px;
 }
 .link-box a {
