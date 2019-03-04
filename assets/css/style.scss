@@ -202,14 +202,14 @@
   text-decoration: none;
 }
 
-.jobs-table {
+.table {
   width: 100%;
   border-collapse: collapse;
 }
-.jobs-table tr:nth-child(odd) {
+.table tr:nth-child(odd) {
   background-color: #dddddd;
 }
-.jobs-table td {
+.table td {
   border: 1px solid #dddddd;
   text-align: left;
 }

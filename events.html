@@ -5,3 +5,19 @@ permalink: /events/
 ---
 
 <h1>Events</h1>
+
+<table class="table">
+  {% for event in site.events reversed %}
+    <tr>
+      <td class="jobs-table-content">
+        <h3><a href="{{ event.url }}">{{ event.title }}</a></h3>
+        <ul>
+          <li><b>Location:</b> {{ job.location }}</li>
+          <li><b>Dates:</b> {{ event.dates }}, {{ event.year }}</li>
+          <li><b>Link:</b> <a href="{{ event.link }}"></a>{{ event.link }}</li>
+          <li><b>Application deadline:</b> {{ event.deadline }}</li>
+        </ul>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
