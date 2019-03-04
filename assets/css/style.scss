@@ -105,7 +105,10 @@ html, body {
   color: white;
 }
 .site-footer-credits {
-  text-align: inherit;
+  position:absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
   font-size: 14pt;
 }
 
