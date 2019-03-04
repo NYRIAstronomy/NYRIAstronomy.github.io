@@ -6,5 +6,5 @@ headline: "A new website is prepared"
 image: /assets/img/banner.jpg
 ---
 
-<h1>{{ page.headline }}</h1>
+#{{ page.headline }}
 Content...

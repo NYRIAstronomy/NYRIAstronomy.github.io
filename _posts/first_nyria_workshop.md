@@ -6,4 +6,4 @@ headline: "A new website is prepared"
 image: /assets/img/workshops/Chile128.jpg
 ---
 
-We had our first workshop in Santiago de Chile, check out this <a href="/../workshops/2014/">link</a>!
+We had our first workshop in Santiago de Chile, check out this [link](/../workshops/2014/)!
