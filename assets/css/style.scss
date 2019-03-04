@@ -3,6 +3,11 @@
 
 @import "{{ site.theme }}";
 
+/* ---------- general design: body ---------- */
+html, body {
+  height: 100%;
+}
+
 /* ---------- general design: header ---------- */
 
 .page-header {
@@ -63,11 +68,10 @@
 /* ---------- general design: body ---------- */
 
 .main-content {
-  clear: both;
   z-index: -2;
-  min-height:100%;
-  margin: 5cm auto -60px auto;
-  height: auto !important;
+  min-height: 100%;
+  margin-top: 5cm;
+  margin-bottom: -60px;
   position: relative;
   padding-left: 15%;
   padding-right: 15%;
@@ -80,14 +84,19 @@
 .main-content h1 {
   text-align: center;
 }
+.main-content::after {
+  content: "";
+  display: block;
+  height: 60px;
+}
 
 
 /* ---------- general design: footer ---------- */
 
 .site-footer {
+  z-index: -3;
 	width: 100%;
 	height: 60px;
-  margin-top: -60px;
   text-align: center;
   background-color: black;
   color: white;
