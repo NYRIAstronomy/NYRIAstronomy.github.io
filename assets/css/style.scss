@@ -87,7 +87,7 @@ html, body {
 .main-content::after {
   content: "";
   display: block;
-  height: 10px;
+  height: 60px;
 }
 
 
@@ -101,10 +101,6 @@ html, body {
   background-color: black;
   color: white;
 }
-.site-footer a {
-  z-index: -10;
-  color: white;
-}
 .site-footer-credits {
   z-index: -10;
   top: 50%;
@@ -112,6 +108,10 @@ html, body {
   transform: translate(-50%, -50%);
   text-align: inherit;
   font-size: 14pt;
+}
+.site-footer-credits a {
+  z-index: -10;
+  color: white;
 }
 
 
@@ -229,4 +229,7 @@ html, body {
   padding: 25px;
   border: 1px solid #dddddd;
   text-align: left;
+}
+.table ul {
+  list-style-type: none;
 }
