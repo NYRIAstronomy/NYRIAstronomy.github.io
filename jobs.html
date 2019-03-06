@@ -11,21 +11,14 @@ Here we list an excerpt of job announcements related to astronomical instrumenta
 </p>
 
 <table class="table">
-  <!--tr>
-    <th class="jobs-table-date">Due date</th>
-    <th class="jobs-table-content">Decription</th>
-  </tr-->
   {% for job in site.jobs reversed %}
     <tr>
-      <!--td class="jobs-table-date">{{ job.due_date }}</td-->
-      <td class="jobs-table-content">
-        <a href="{{ job.link }}">
-          <h3>{{ job.position_title }}</h3>
-        </a>
+      <td>
+        <a href="{{ job.link }}"><h3>{{ job.position_title }}</h3></a>
         <ul>
           <li><b>Position:</b> {{ job.position }} at {{ job.location }}</li>
           <li><b>Contact:</b> {{ job.contact }} (<a href="mailto:{{ job.email }}"></a>{{ job.email }})</li>
-          <li><b>Link:</b> {{ job.link }}</li>
+          <li><b>Link:</b> <a href="{{ job.link }}">{{ job.link }}</a></li>
           <li><b>Application deadline:</b> {{ job.due_date }}</li>
         </ul>
       </td>

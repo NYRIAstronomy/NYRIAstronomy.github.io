@@ -220,15 +220,15 @@ html, body {
 
 .table {
   width: 100%;
-  padding: 25px;
   border-collapse: collapse;
 }
 .table tr:nth-child(odd) {
   background-color: #dddddd;
 }
 .table td {
+  padding: 25px;
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: left;  
 }
 .jobs-table-date {
   width: 20%;
