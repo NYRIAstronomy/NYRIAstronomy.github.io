@@ -70,8 +70,11 @@ html, body {
   z-index: 0;
   width: 100%;
   min-height: 80%;
-  margin-top: 5cm;
+
   position: relative;
+  margin-top: 5cm;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 /*
 .site-main {
@@ -94,10 +97,7 @@ html, body {
 */
 
 .site-main-content-wrapper {
-  padding-left: 15%;
-  padding-right: 15%;
   text-align: justify;
-
   box-shadow: 0px 0px 8px gray;
 }
 .site-main-content-wrapper h1 {
