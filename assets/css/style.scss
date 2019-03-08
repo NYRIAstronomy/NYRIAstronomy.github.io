@@ -11,7 +11,7 @@ html, body {
 /* ---------- general design: header ---------- */
 
 .site-header {
-  z-index: 0;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -67,8 +67,10 @@ html, body {
 
 /* ---------- general design: body ---------- */
 .site-main {
+  z-index: 0;
   width: 100%;
   height: 100%;
+  margin-top: 5cm;
   margin-bottom: -60px;
   position: relative;
 }
