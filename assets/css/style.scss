@@ -10,7 +10,7 @@ html, body {
 
 /* ---------- general design: header ---------- */
 
-.page-header {
+.site-header {
   z-index: 0;
   top: 0;
   left: 0;
@@ -26,38 +26,38 @@ html, body {
   font-size: 14pt;
   color: red;
 }
-.page-header img {
+.site-header img {
   float: left;
   width: 100px;
 }
-.page-header h1 h2 {
+.site-header h1 h2 {
   position: relative;
   left: 110px;
   margin-left: 10px;
 }
-.page-header a {
+.site-header a {
   color: red;
   text-decoration: none;
 }
 
-.page-header-navigation{
+.site-header-navigation{
   position: relative;
   right: 0;
   z-index: -1;
 }
-.page-header-navigation ul {
+.site-header-navigation ul {
   float: right;
   display: inline;
 }
-.page-header-navigation li {
+.site-header-navigation li {
   display: inline;
 }
-.page-header-navigation a {
+.site-header-navigation a {
   color: white;
   text-decoration: none;
   border: 5px solid black;
 }
-.page-header-navigation a:hover {
+.site-header-navigation a:hover {
   background-color: grey;
   color: white;
   border: 5px solid grey;
@@ -67,7 +67,7 @@ html, body {
 
 /* ---------- general design: body ---------- */
 
-.main-content {
+.site-main {
   z-index: -2;
   min-height: 100%;
   margin-top: 5cm;
@@ -77,13 +77,13 @@ html, body {
   padding-right: 15%;
   text-align: justify;
 }
-.main-content a {
+.site-main a {
   color: black;
 }
-.main-content h1 {
+.site-main h1 {
   text-align: center;
 }
-.main-content::after {
+.site-main::after {
   content: "";
   display: block;
   height: 60px;
