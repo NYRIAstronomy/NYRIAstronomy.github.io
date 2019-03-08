@@ -98,9 +98,6 @@ html, body {
   padding-left: 15%;
   padding-right: 15%;
 }
-.site-main-content-wrapper a {
-  color: black;
-}
 .site-main-content-wrapper h1 {
   text-align: center;
 }
@@ -108,6 +105,7 @@ html, body {
 
 .site-footer {
   z-index: 0;
+  position: relative;
 	width: 100%;
 	height: 60px;
   text-align: center;
@@ -115,7 +113,6 @@ html, body {
   color: white;
 }
 .site-footer-credits {
-  z-index: -10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -123,7 +120,6 @@ html, body {
   font-size: 14pt;
 }
 .site-footer-credits a {
-  z-index: -10;
   color: white;
 }
 
