@@ -25,6 +25,8 @@ html, body {
   background-color: black;
   font-size: 14pt;
   color: red;
+
+  opacity: 0.9;
 }
 .site-header img {
   float: left;
@@ -69,7 +71,6 @@ html, body {
 .site-main {
   z-index: 0;
   width: 100%;
-  min-height: 80%;
 
   position: relative;
   margin-top: 5cm;
@@ -98,6 +99,8 @@ html, body {
 
 .site-main-content-wrapper {
   width: auto;
+  min-height: 80%;
+
   padding: 25px;
   text-align: justify;
   box-shadow: 0px 0px 8px gray;
@@ -116,6 +119,8 @@ html, body {
   text-align: center;
   background-color: black;
   color: white;
+
+  opacity: 0.9;
 }
 .site-footer-credits {
   top: 50%;
