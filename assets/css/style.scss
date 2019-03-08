@@ -112,6 +112,7 @@ html, body {
 
 .site-footer {
   z-index: 0;
+  float: bottom;
   position: absolute;
   bottom: 0;
 	width: 100%;
@@ -229,12 +230,14 @@ html, body {
   text-align: center;
   transform: translate(-50%, -50%);
 
-  background-color: black;
-  border: 10px solid white-translucent;
+  min-width: 2cm;
+
+  background-color: red;
+  border: 10px solid red;
   border-radius: 10px;
 }
 .link-box a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
