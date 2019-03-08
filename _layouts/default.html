@@ -18,6 +18,9 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script type="text/javascript" src="assets/js/slideshow.js" language="JavaScript">alert("Option1 is executed!");</script>
+    <script type="text/javascript" src="/assets/js/slideshow.js" language="JavaScript">alert("Option2 is executed!");</script>
+    <script type="text/javascript" src="../assets/js/slideshow.js" language="JavaScript">alert("Option3 is executed!");</script>
   </head>
 
   <body>
@@ -61,6 +64,6 @@
       {% endif %}
       <span class="site-footer-credits">Copyright &copy; 2019 NYRIA &mdash; <a href="/../impressum/">Impressum</a> &mdash; <a href="/../contact/">Contact</a></span>
     </footer>
-    
+
   </body>
 </html>

@@ -76,7 +76,6 @@ html, body {
   padding-left: 15%;
   padding-right: 15%;
   text-align: justify;
-  //box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px grey, 0px 0px 100px grey;
 }
 .main-content a {
   color: black;
@@ -230,6 +229,13 @@ html, body {
   border: 1px solid #dddddd;
   text-align: left;
 }
+.table td:hover {
+  background-color: #3D3C3A;
+}
 .table ul {
   list-style-type: none;
+}
+.table a {
+  text-decoration: inherit;
+  color: inherit;
 }
