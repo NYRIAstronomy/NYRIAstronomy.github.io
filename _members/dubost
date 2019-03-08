@@ -1,0 +1,21 @@
+---
+layout: default
+title:  "Members"
+permalink: /members/dubost/
+
+name: "Robert Harris"
+affiliation: "CfAI, Durham University, UK"
+position: "PhD Student"
+Research Subject Title: "The pupil-modulated point diffraction interferometer"
+Research Summary: "Theoretical formulation and lab validation of a novel wavefront sensor (WFS) concept: the pupil-modulated Point Diffraction Interferometer (m-PDI). PDIs can perform direct wavefront sensing (as opposed to a Shack-Hartmann's or a pyramid's indirect sensing through gradients) with nano-metric accuracy, allowing them to tackle problems ranging from persistent speckle suppression in high-contrast imaging, to fine cophasing of segmented aperture telescopes and achieving eXtreme Adaptive Optics (XAO). One of the main advantages of the m-PDI over other interferometric approaches is its wide chromatic range for extended throughput. This property is currently being tested in the lab where the performance of the instrument with polychromatic light is proving to be comparable to the one with monochromatic light."
+Previous Research: "Masters at PUC, Chile, until Juin 2015. Project: "Turbulence estimation in wide-field adaptive optics systems"
+
+keywords: Adaptive Optics, Interferometry, Wavefront Sensing  
+email:  nsdubost@gmail.com
+
+image_path: /assets/member_photo/dubost.jpg
+---
+
+<h1>{{ page.name }}</h1>
+<p>Affiliation: {{ page.affiliation }}</p>
+<p>Contact: {{ page.email }}</p>
