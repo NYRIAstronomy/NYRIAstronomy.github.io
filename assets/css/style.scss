@@ -261,6 +261,9 @@ html, body {
 .table ul {
   list-style-type: none;
 }
+.table ol {
+  padding-left: 25px;
+}
 .table a {
   text-decoration: none;
   color: inherit;
@@ -272,6 +275,7 @@ html, body {
 
 .posts {
   width: 80%;
+  height: 5cm,
   padding-left: 10%;
   padding-right: 10%;
 }
