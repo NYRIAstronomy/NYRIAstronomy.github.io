@@ -8,18 +8,20 @@ permalink: /events/
 
 <table class="table">
   {% for event in site.events reversed %}
-    <tr>
-      <td class="jobs-table-content">
-        <a href="{{ event.link }}" target="_blank">
+    <a href="{{ event.link }}" target="_blank">
+      <tr>
+        <td class="jobs-table-content">
+
           <h3>{{ event.title }}</h3>
-        </a>
-        <ul>
-          <li><b>Location:</b> {{ event.location }}</li>
-          <li><b>Dates:</b> {{ event.dates }}, {{ event.year }}</li>
-          <li><b>Link:</b> <a href="{{ event.link }}" target="_blank">{{ event.link }}</a></li>
-          <li><b>Application deadline:</b> {{ event.deadline }}</li>
-        </ul>
-      </td>
-    </tr>
+
+          <ul>
+            <li><b>Location:</b> {{ event.location }}</li>
+            <li><b>Dates:</b> {{ event.dates }}, {{ event.year }}</li>
+            <li><b>Link:</b> <a href="{{ event.link }}" target="_blank">{{ event.link }}</a></li>
+            <li><b>Application deadline:</b> {{ event.deadline }}</li>
+          </ul>
+        </td>
+      </tr>
+    </a>
   {% endfor %}
 </table>
