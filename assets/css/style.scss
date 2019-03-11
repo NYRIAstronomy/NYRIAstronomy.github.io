@@ -113,12 +113,12 @@ html, body {
 .site-footer {
   position: relative;
   z-index: 0;
-  bottom: 0;
+  top: 0;
+  padding-top: 25px;
 }
 
 .site-footer-content-wrapper {
   z-index: 0;
-  float: bottom;
   position: absolute;
   bottom: 0;
 	width: 100%;
