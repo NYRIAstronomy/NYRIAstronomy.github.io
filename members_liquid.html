@@ -7,7 +7,7 @@ permalink: /members_liquid/
 {% assign filter = keywords %}
 {% assign value = Astrophotonics%}
 
-{% assign display_members = site.members | where "keywords" "Astrophotonics" %}
+{% assign display_members = site.members | where "title" "Members" %}
 {% for member in display_members %}
   {{ member.name }}
 {% endfor%}
