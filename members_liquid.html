@@ -1,0 +1,65 @@
+---
+layout: default
+title:  "Members"
+permalink: /members_liquid/
+---
+
+{% assign filter = keywords %}
+{% assign value = Astrophotonics%}
+
+{% assign display_members = site.members | where "keywords" "Astrophotonics" %}
+{% for member in display_members %}
+  {{ member.name }}
+{% endfor%}
+
+
+<h1>Members</h1>
+NYRIA is a network of young astronomers from all around the world, working in different areas of astronomical instrumention. Here you can find members as according to their country, research areas and more.
+
+<div class="flexible-matrix">
+  <div class="link-box">
+    <a href="/../members/by_country/">
+      <img src="" alt="">
+      <div class="link-box-text">Show Members By Country</div>
+    </a>
+  </div>
+
+  <div class="link-box">
+    <a href="/../members/members_by_research/">
+      <img src="" alt="">
+      <div class="link-box-text">Show Members By Research</div>
+    </a>
+  </div>
+
+  <div class="link-box">
+    <a href="/../members/members_by_institute/">
+      <img src="" alt="">
+      <div class="link-box-text">Show Members By Institute</div>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+<!-- <iframe height="720" src="https://www.google.com/maps/d/embed?mid=1LTyyPeI1ta36bas5gGLXPjSjc60jAUKs" width="340"></iframe> -->
+
+<!-- <h1>Members</h1>
+<table class="member-table">
+  {% for member in site.members %}
+    <tr>
+      <td class="member-table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}"></a></td>
+      <td class="member-table-content">
+        <ul>
+          <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
+          <li><b>Affiliation:</b> {{ member.affiliation }} </li>
+          <li><b>Subjects:</b> {{ member.subjects }} </li>
+          <li><b>Keywords:</b> {{ member.keywords }} </li>
+          <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li>
+        </ul>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+ -->
