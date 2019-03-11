@@ -111,6 +111,12 @@ html, body {
 /* ---------- general design: footer ---------- */
 
 .site-footer {
+  position: relative;
+  z-index: 0;
+  bottom: 0;
+}
+
+.site-footer-content-wrapper {
   z-index: 0;
   float: bottom;
   position: absolute;
