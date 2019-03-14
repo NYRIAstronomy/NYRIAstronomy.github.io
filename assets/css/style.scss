@@ -295,16 +295,12 @@ html, body {
 }
 
 .stand-alone-image {
-  position: relative;
-  padding-left: 15%;
-  padding-right: 15%;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
   max-height: 8cm;
 }
-.stand-alone-image img {
-  position: absolute;
-  max-width: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.stand-alone-image-subtitle {
+  font-size: 8pt;
 }
