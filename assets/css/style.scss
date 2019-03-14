@@ -278,11 +278,12 @@ html, body {
   color: inherit;
 }
 
-.banner {
+.banner-image {
    width: 100%;
    position: relative;
 }
-.banner img {
+.banner-image img {
+  position: absolute;
   width: 100%;
 }
 
