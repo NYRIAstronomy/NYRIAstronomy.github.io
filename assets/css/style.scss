@@ -130,6 +130,7 @@ html, body {
   opacity: 0.9;
 }
 .site-footer-credits {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -291,6 +292,11 @@ html, body {
 }
 
 .stand-alone-image {
+  position: relative;
   padding-left: 15%;
   padding-right: 15%;
+}
+.stand-alone-image img {
+  position: absolute;
+  left: 50%;
 }
