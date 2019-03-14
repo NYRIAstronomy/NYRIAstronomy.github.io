@@ -295,9 +295,11 @@ html, body {
 }
 
 .stand-alone-image {
-  position: absolute;
+  position: relative;
   padding-left: 15%;
   padding-right: 15%;
+  width: 100%;
+  max-height: 8cm;
 }
 .stand-alone-image img {
   position: absolute;
