@@ -16,22 +16,17 @@ permalink: /members/by=country/
   background-color: #ccc;
   
 }
-  
 .link-box-circle img {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
   opacity: 0.5;
-
+  transition: .5s ease;
 }
-  
 .link-box-circle img:hover {
   opacity: 1.0;
-  transition: .5s ease;  
 }
-  
-  
-.link-box-circle text {
+.link-box-circle-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,20 +45,12 @@ permalink: /members/by=country/
   color: white;
   text-decoration: none;
 }
-/*   .link-box-circle text:hover {
+  .link-box-circle-text:hover {
      opacity: 1.0;
-  } */
+  }
 
 
-/* .link-box-circle .normal {
- transition: .5s ease;
-}
-.overlay-image:hover .normal {
- opacity: 0;
-}
-.overlay-image .hover {
- background-color: rgba(0,0,0,0.5);
-}   */
+  
   
   
 </style>
@@ -80,19 +67,19 @@ Choose the country by clicking at the flag.
   <div class="link-box-circle">
     <a href="/../members/by=country/country=belgium/">
       <img src="/assets/img/member/flags/BE_Square.png" alt="">
-      <text Belgium >
+      <div class="link-box-circle-text">Belgium</div>
     </a>
   </div>   
    
   <div class="link-box-circle">
     <a href="/../members/by=country/country=brazil/">
       <img src="/assets/img/member/flags/BR_Square.png" alt="">
-      <div class="text">Brazil</div>
+      <div class="link-box-circle-text">Brazil</div>
     </a>
   </div>
 
-<!--     <div class="link-box-circle"> -->
-<!--     <a href="/../members/by=country/country=france/">
+    <div class="link-box-circle">
+    <a href="/../members/by=country/country=france/">
       <img src="/assets/img/member/flags/FR_Square.png" alt="">
       <div class="link-box-circle-text">France</div>
     </a>
@@ -145,6 +132,6 @@ Choose the country by clicking at the flag.
       <img src="/assets/img/member/flags/USA_Square.png" alt="">
       <div class="link-box-circle-text">USA</div>
     </a>
-  </div>  -->
+  </div> 
    
 </div>
