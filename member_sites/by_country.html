@@ -3,13 +3,47 @@ layout: default
 title:  "Members By Country"
 permalink: /members/by=country/
 ---
+<style>
+.link-box-circle img {
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.2;
+}
+.link-box-circle img:hover {
+  opacity: 0.5;
+}
+.link-box-circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 
+  min-width: 2cm;
+  font-weight: bold;
+
+  background-color: red;
+  border: 10px solid red;
+  border-radius: 10px;
+}
+.link-box-circle a {
+  color: white;
+  text-decoration: none;
+}
+
+</style>
 <h1>Members By Country</h1>
 
 Choose the country by clicking at the flag.
 
-<div class="flexible-matrix">
-  <div class="link-box">
+
+
+
+
+
+ <div class="flexible-matrix">
+  <div class="link-box-circle">
     <a href="/../members/by=country/country=germany/">
       <img src="/assets/img/member/flags/GE_Square.png" alt="">
       <div class="link-box-text">Germany</div>
