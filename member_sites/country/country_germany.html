@@ -9,6 +9,7 @@ permalink: /members/by=country/country=germany/
 
 <table class="member-table-germany">
   {% for member in site.members %}
+  {% if member.country == "germany"%}
     <tr>
       <td class="member-table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}"></a></td>
       <td class="member-table-content">
@@ -21,6 +22,7 @@ permalink: /members/by=country/country=germany/
         </ul>
       </td>
     </tr>
+  {% endfor %}  
   {% endfor %}
 </table>
 
