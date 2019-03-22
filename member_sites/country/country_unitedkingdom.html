@@ -4,6 +4,9 @@ title:  "Members By Country"
 permalink: /members/by=country/country=unitedkingdom/
 ---
 
+
+
+
 <h1>Members In United Kingdom</h1>
 
 
@@ -11,7 +14,7 @@ permalink: /members/by=country/country=unitedkingdom/
   {% for member in site.members %}
   {% if member.country == "United Kingdom" %}
     <tr>
-      <td class="member-table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}"></a></td>
+      <td class="member-table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
       <td class="member-table-content">
         <ul>
           <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
@@ -22,7 +25,6 @@ permalink: /members/by=country/country=unitedkingdom/
         </ul>
       </td>
     </tr>
-  {% endif %}  
+  {% endif %}
   {% endfor %}
 </table>
-
