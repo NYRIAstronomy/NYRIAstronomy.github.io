@@ -10,12 +10,12 @@ permalink: /members/by=country/country=germany/
 <h1>Members In Germany</h1>
 
 
-<table class="member-table">
+<table class="table">
   {% for member in site.members %}
   {% if member.country == "Germany" %}
     <tr>
-      <td class="member-table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
-      <td class="member-table-content">
+      <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}"></a></td>
+      <td class="table-content">
         <ul>
           <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
           <li><b>Affiliation:</b> {{ member.affiliation }} </li>
