@@ -3,9 +3,10 @@
 layout: default
 title:  "Members By Research"
 permalink: /members/by=research/research=coronagraphy/
+keyword: "coronagraphy"
 ---
 
-keyword = "coronagraphy"
+
 
 
 <h1>Members In Adaptive Optics</h1>
@@ -13,8 +14,7 @@ keyword = "coronagraphy"
 
 <table class="table">
   {% for member in site.members %}
-  {% if member.keyword1 == keyword or member.keyword2 == keyword or member.keyword3 == keyword or member.keyword4 == keyword or member.keyword5 == keyword  %}
-    <tr>
+ {% if member.keyword1 == {{page.keyword}} or member.keyword2 == {{page.keyword}} or member.keyword3 == {{page.keyword}} or member.keyword4 == {{page.keyword}} or member.keyword5 == {{page.keyword}}  %}    <tr>
       <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
       <td class="table-content">
         <ul>
