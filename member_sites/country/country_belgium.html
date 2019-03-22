@@ -1,0 +1,30 @@
+---
+layout: default
+title:  "Members By Country"
+permalink: /members/by=country/country=belgium/
+---
+
+
+
+
+<h1>Members In Belgium</h1>
+
+
+<table class="table">
+  {% for member in site.members %}
+  {% if member.country == "Belgium" %}
+    <tr>
+      <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
+      <td class="table-content">
+        <ul>
+          <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
+          <li><b>Affiliation:</b> {{ member.affiliation }} </li>
+          <li><b>Research:</b> {{ member.title }} </li>
+          <li><b>Keywords:</b> {{ member.keywords }} </li>
+          <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li>
+        </ul>
+      </td>
+    </tr>
+  {% endif %}
+  {% endfor %}
+</table>
