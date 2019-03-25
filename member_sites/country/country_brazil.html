@@ -31,14 +31,6 @@ permalink: /members/by=country/country=brazil/
 
 <h3>Liquid test</h3>
 <p>
-{% assign country = site.permalink %}
-1{{ country }}
-{% assign country = site.permalink | split: "/" %}
-2{{ country }}
-{% assign country = site.permalink | split: "/" | replace: "country=" %}
-3{{ country }}
-{% assign country = page.permalink | split: "/" | replace: "country=" | capitalize %}
-4{{ country }}
 {% assign country = page.permalink %}
 5{{ country }}
 </p>
