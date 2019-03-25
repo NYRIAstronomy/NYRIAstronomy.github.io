@@ -216,7 +216,7 @@ html, body {
 .link-box {
   position: relative;
   height: 171px;
-  width: 304px;
+  !width: 304px;
   margin: 20px;
 
   border: 1px solid #bbb;
