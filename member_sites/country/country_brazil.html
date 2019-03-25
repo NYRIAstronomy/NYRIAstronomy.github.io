@@ -31,6 +31,10 @@ permalink: /members/by=country/country=brazil/
 
 <h3>Liquid test</h3>
 <p>
-{% assign country = page.permalink %}
-5{{ country }}
+{% assign link = page.permalink %}
+{{ link }}
+{% assign link-parts = link | split: "/" %}
+{{ link-parts }}
+{% assign country = link-parts | last | remove: "country="  %}
+{{ country | capitalize }}
 </p>
