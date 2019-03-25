@@ -63,8 +63,7 @@
 
         <h1>Members In {{ by_country | capitalize }}</h1>
         <table class="table">
-          {% for member in site.members %}
-          {% if member.country == by_country %}
+          {% for member in site.members | where: "country", by_country %}
             <tr>
               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
               <td class="table-content">
@@ -77,7 +76,6 @@
                 </ul>
               </td>
             </tr>
-          {% endif %}
           {% endfor %}
         </table>
 
