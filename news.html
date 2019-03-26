@@ -6,6 +6,8 @@ permalink: /news/
 
 <h1>News</h1>
 
+{{ site.posts }}
+
 {% for post in site.posts %}
   <a href="{{ post.url }}">
     <h3>{{ post.title }}</h3>
