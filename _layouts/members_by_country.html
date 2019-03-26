@@ -55,9 +55,9 @@
 
     <main id="content" class="site-main" role="main">
       <div class="site-main-content-wrapper">
-        {% assign by_country = page.permalink | split: "/" | last | remove: "country=" %}
+        {% assign by_country = page.permalink | split: "/" | last | remove: "country=" | capitalize %}
 
-        <h1>Members In {{ by_country | capitalize }}</h1>
+        <h1>Members In {{ by_country }}</h1>
         <table class="table">
           {% for member in site.members | where: "country", "by_country" %}
             <tr>
