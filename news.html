@@ -7,10 +7,9 @@ permalink: /news/
 <h1>News</h1>
 
 {% for post in site.posts %}
-  <div class="post">
-    <a href="{{ post.url }}">
-      <img src="{{ post.image}}" alt="">
-      <h3>{{ post.title }}</h3>
-    </a>
-  </div>
+  <a href="{{ post.url }}">
+    <h3>{{ post.title }}</h3>
+    {{ post.content | truncatewords: 50 }}
+  </a>
+  <br>
 {% endfor %}
