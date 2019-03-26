@@ -28,13 +28,3 @@ permalink: /members/by=country/country=brazil/
   {% endif %}
   {% endfor %}
 </table>
-
-<h3>Liquid test</h3>
-<p>
-{% assign link = page.permalink %}
-{{ link }}
-{% assign link-parts = link | split: "/" %}
-{{ link-parts }}
-{% assign country = link-parts | last | remove: "country="  %}
-{{ country | capitalize }}
-</p>
