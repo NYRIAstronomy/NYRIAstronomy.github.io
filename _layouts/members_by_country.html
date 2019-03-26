@@ -55,10 +55,23 @@
 
     <main id="content" class="site-main" role="main">
       <div class="site-main-content-wrapper">
-        {% assign by_country = page.permalink | split: "/" | last | split: "=" | last | replace: "_", " " | capitalize %}
-        {% assign member_subset = site.members | where: "country", by_country %}
+        <!--Read search parameters from link-->
+        {% assign criterion = page.permalink | split: "/" | last | split: "=" | first %}
+        {% assign value = page.permalink | split: "/" | last | split: "=" | last | replace: "_", " " %}
 
-        <h1>Members In {{ by_country }}</h1>
+        <!--Define headline according to search criterion-->
+        {% if criterion == "country" %}
+          {% assign value = value | capitalize %}
+          <h1>Members In {{ value }}</h1>
+        {% elsif criterion == "research" %}
+          <h1>Members Working On {{ value | capitalize }}</h1>
+        {% elsif criterion == "institute" %}
+          <h1>Members At {{ value | capitalize }}</h1>
+        {% endif %}
+
+        <!--Define subset of members according to search criterion-->
+        {% assign member_subset = site.members | where: criterion, value %}
+
         <table class="table">
           {% for member in member_subset %}
             <tr>
