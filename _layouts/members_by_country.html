@@ -55,15 +55,11 @@
 
     <main id="content" class="site-main" role="main">
       <div class="site-main-content-wrapper">
-        {{ page.permalink }}
-        {{ page.permalink | split: "/"" }}
-        {{ page.permalink | split: "/" | last }}
-        {{ page.permalink | split: "/" | last | remove: "country=" }}
         {% assign by_country = page.permalink | split: "/" | last | remove: "country=" %}
 
         <h1>Members In {{ by_country | capitalize }}</h1>
         <table class="table">
-          {% for member in site.members | where: "country", by_country %}
+          {% for member in site.members | where: "country", "by_country" %}
             <tr>
               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
               <td class="table-content">
@@ -78,8 +74,6 @@
             </tr>
           {% endfor %}
         </table>
-
-        {{ content }}
       </div>
     </main>
 
