@@ -63,7 +63,11 @@
         {% if criterion == "country" %}
           {% assign value = page.item_value %}
           <h1>Members In {{ value }}</h1>
+        
         {% elsif criterion == "research" %}
+           {% assign value = page.keyword %}  
+             
+        
           <h1>Members Working On {{ value | capitalize }}</h1>
         {% elsif criterion == "institute" %}
           <h1>Members At {{ value | capitalize }}</h1>
