@@ -57,7 +57,7 @@
       <div class="site-main-content-wrapper">
         <!--Read search parameters from link-->
         {% assign criterion = page.permalink | split: "/" | last | split: "=" | first %}
-        {% assign value = page.permalink | split: "/" | last | split: "=" | last | replace: "-", " " %}
+        {% assign value = page.permalink | split: "/" | last | split: "=" | last | replace: "_", " " %}
 
         <!--Define headline according to search criterion-->
         {% if criterion == "country" %}
