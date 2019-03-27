@@ -61,7 +61,7 @@
 
         <!--Define headline according to search criterion-->
         {% if criterion == "country" %}
-          {% assign value = value | capitalize %}
+          {% assign value = value | uppercase %}
           <h1>Members In {{ value }}</h1>
         {% elsif criterion == "research" %}
           <h1>Members Working On {{ value | capitalize }}</h1>
