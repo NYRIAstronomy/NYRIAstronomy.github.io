@@ -55,6 +55,11 @@
 
     <main id="content" class="site-main" role="main">
       <div class="site-main-content-wrapper">
+        div.c {
+          text-transform: capitalize;
+        }
+        
+        
         <!--Read search parameters from link-->
         {% assign criterion = page.permalink | split: "/" | last | split: "=" | first %}
         {% assign value = page.permalink | split: "/" | last | split: "=" | last | replace: "_", " " %}
@@ -63,9 +68,9 @@
         {% if criterion == "country" %}
 <!--           {% assign value = value | lowercase %}        
           {% assign value = value | capitalize %} -->
-        p{
-    text-transform: capitalize;
-            }<h1>members in {{ value }}</h1>
+         {% assign value = <div class="c">{{value}}</div>}
+        
+         <h1>Members in {{ value }}</h1>
         {% elsif criterion == "research" %}
           <h1>Members Working On {{ value | capitalize }}</h1>
         {% elsif criterion == "institute" %}
