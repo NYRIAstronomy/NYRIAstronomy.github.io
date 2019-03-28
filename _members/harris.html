@@ -50,6 +50,6 @@ image_path: /assets/img/member/harris.jpg
 
 
 
-<p><b>Keywords:</b> {{ page.research | replace:",","--" | replace:"""," " }} </p>
+<p><b>Keywords:</b> {{ page.research | split:" , " }} </p>
 
 <p><b>Contact:</b> {{ page.email }} </p>
