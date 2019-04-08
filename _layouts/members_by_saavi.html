@@ -95,17 +95,16 @@
         {% assign member_subset = site.members | where: criterion, value %}
 
         {% for member in member_subset %}
-        <div class="entry"><a href="{{ member.url }}">
+        <div class="entry">
           
-                  <ul>
-                  <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
-                  <li><b>Affiliation:</b> {{ member.affiliation }} </li>
-                  <li><b>Research:</b> {{ member.title }} </li>
-                  <li><b>Keywords:</b> {{ member.keywords }} </li>
-                  <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li>
-                </ul>     
-          <img src="{{member.image_path}}" alt= height="40" align="left">
-          </a>
+                  <p><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> <img src="{{member.image_path}}" alt= height="10" align="left"> </p>
+                  <p><b>Affiliation:</b> {{ member.affiliation }} </p>
+                  <p><b>Research:</b> {{ member.title }} </p>
+                  <p><b>Keywords:</b> {{ member.keywords }} </p>
+                  <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
+                     
+          
+   
         </div>  
         {% endfor %}
         
