@@ -103,18 +103,7 @@
           opacity: 0.5;
         }   
           
-        .entry .text {
-        position: absolute;
-/*         top: 50%;
-        left: 50%; */
-        text-align: left;
-/*         transform: translate(-50%, -50%);
-        min-width: 2cm;
-        font-weight: bold;
-        background-color: red;
-        border: 10px solid red;
-        border-radius: 10px; */
-      }       
+      
           
           
         </style>
@@ -125,14 +114,14 @@
         {% for member in member_subset %}
         <div class="entry">
           <a href="{{ member.url }}">
-            <div class="text">
+
                   <p><b>Name:</b>{{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="20"> </p>
                   <p><b>Affiliation:</b> {{ member.affiliation }} </p>
                   <p><b>Research:</b> {{ member.title }} </p>
                   <p><b>Keywords:</b> {{ member.keywords }} </p>
                   <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
                      
-         </div> 
+
         </a>
         </div> 
         <br>
