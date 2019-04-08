@@ -96,13 +96,15 @@
 
         {% for member in member_subset %}
         <div class="entry">
+          
                   <ul>
                   <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
                   <li><b>Affiliation:</b> {{ member.affiliation }} </li>
                   <li><b>Research:</b> {{ member.title }} </li>
                   <li><b>Keywords:</b> {{ member.keywords }} </li>
                   <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li>
-                </ul>        
+                </ul>     
+          <img src="{{member.image_path}}" alt= height="140" align="left">
         </div>  
         {% endfor %}
         
