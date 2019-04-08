@@ -75,7 +75,7 @@
         <!--Define subset of members according to search criterion-->
         {% assign member_subset = site.members | where: criterion, value %}
 
-        <table class="table">
+        <table class="table", border-radius: 13px>
           {% for member in member_subset %}
             <tr>
               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
