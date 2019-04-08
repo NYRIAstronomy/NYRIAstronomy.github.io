@@ -72,10 +72,41 @@
           <h1>Members At {{ value | capitalize }}</h1>
         {% endif %}
 
+        
+        <style>
+        .entry {
+        border: 3px solid #bd0c0c;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        background: #FCFBF3;
+        padding: 20px 25px; 
+        }
+
+        .titlehead {
+        font-family:verdana; 
+        font-size: 30px;
+        text-align:center;
+        color:black;
+        font-weight: bold;
+        }
+        </style>
+   
         <!--Define subset of members according to search criterion-->
         {% assign member_subset = site.members | where: criterion, value %}
 
-        <table class="table" border-radius: 13px>
+        {% for member in member_subset %}
+        <div class="entry">
+                  <ul>
+                  <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
+                  <li><b>Affiliation:</b> {{ member.affiliation }} </li>
+                  <li><b>Research:</b> {{ member.title }} </li>
+                  <li><b>Keywords:</b> {{ member.keywords }} </li>
+                  <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li>
+                </ul>        
+        </div>  
+        {% endfor %}
+        
+<!--         <table class="table" >
           {% for member in member_subset %}
             <tr>
               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
@@ -90,7 +121,7 @@
               </td>
             </tr>
           {% endfor %}
-        </table>
+        </table> -->
       </div>
     </main>
 
