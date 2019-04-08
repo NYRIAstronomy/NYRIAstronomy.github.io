@@ -95,7 +95,7 @@
         {% assign member_subset = site.members | where: criterion, value %}
 
         {% for member in member_subset %}
-        <div class="entry">
+        <div class="entry"><a href="{{ member.url }}">
           
                   <ul>
                   <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
@@ -104,7 +104,8 @@
                   <li><b>Keywords:</b> {{ member.keywords }} </li>
                   <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li>
                 </ul>     
-          <img src="{{member.image_path}}" alt= height="140" align="left">
+          <img src="{{member.image_path}}" alt= height="40" align="left">
+          </a>
         </div>  
         {% endfor %}
         
