@@ -75,49 +75,36 @@
         
         <style>
         .entry {
-        border: 3px solid ;#bd0c0c
+        border: 1px solid ;red
         margin-bottom: 15px;
         border-radius: 15px;
-        background: #FCFBF3;
+        background: white;
         padding: 20px 25px; 
         opacity: 1.0;
-        text-decoration: none;
+        box-shadow: 1px 1px 1px 1px #888888;
         }
-
          .entry img{
         height: 140;
         border: 1px solid #bbb;
         border-radius: 15px;
         object-fit: cover;
 
-      }       
-          
-        .titlehead {
+
+        }       
+
+        .font-description {
         font-family:verdana; 
-        font-size: 30px;
-        text-align:center;
+        font-size: 12px;
+        text-align:left;
         color:black;
         font-weight: bold;
+        text-decoration: none;
         }
-          
-       .entry:hover {
+
+        .entry:hover {
           opacity: 0.5;
         }   
-          
-/*             .container .text-block {
-               background-color: white;   
-              
-/*         position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
-        min-width: 2cm;
-        font-weight: bold;
-        background-color: red;
-        border: 10px solid red;
-        border-radius: 10px; */
-      } */
+
           
           
         </style>
@@ -128,7 +115,8 @@
         {% for member in member_subset %}
         <div class="entry">
           
-          <a href="{{ member.url }}" style="text-decoration:none;>
+          <a href="{{ member.url }}" style="text-decoration:none">
+            <div class="font-description">
 
                   <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="20"> </p>
                   <p><b>Affiliation:</b> {{ member.affiliation }} </p>
@@ -136,7 +124,7 @@
                   <p><b>Keywords:</b> {{ member.keywords }} </p>
                   <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
                      
-   
+            </div>
         </a>
         </div> 
         <br>
