@@ -81,6 +81,7 @@
         background: #FCFBF3;
         padding: 20px 25px; 
         opacity: 1.0;
+        text-decoration: none;
         }
 
          .entry img{
@@ -103,7 +104,7 @@
           opacity: 0.5;
         }   
           
-            .container .text-block {
+/*             .container .text-block {
                background-color: white;   
               
 /*         position: absolute;
@@ -116,7 +117,7 @@
         background-color: red;
         border: 10px solid red;
         border-radius: 10px; */
-      }
+      } */
           
           
         </style>
@@ -127,14 +128,14 @@
         {% for member in member_subset %}
         <div class="entry">
           <a href="{{ member.url }}">
-                  <div class="text-block">
+
                   <p><b>Name:</b>{{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="20"> </p>
                   <p><b>Affiliation:</b> {{ member.affiliation }} </p>
                   <p><b>Research:</b> {{ member.title }} </p>
                   <p><b>Keywords:</b> {{ member.keywords }} </p>
                   <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
                      
-                  </div>
+   
         </a>
         </div> 
         <br>
