@@ -1,13 +1,31 @@
 ---
+
+
 layout: default
 title:  "Contact"
 permalink: /contact/
 ---
+<?php
+if($_POST["message"]) {
+    mail("your@email.address", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
 
 <h1>Contact</h1>
 Place contact form here ...
 
-<head>
+
+
+
+
+
+<form method="post" action="contact.php">
+    <textarea name="message"></textarea>
+    <input type="submit">
+</form>
+
+
+<!-- <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -64,7 +82,7 @@ input[type=submit]:hover {
       <option value="usa">USA</option>
     </select> -->
 
-      <label for="lname">Email Address</label>
+<!--       <label for="lname">Email Address</label>
     <input type="text" id="emailad" name="email" placeholder="Your email address..">
 
     
@@ -76,7 +94,7 @@ input[type=submit]:hover {
 </div>
 
 </body>
-
+ --> 
 
 
 <a href="/../site_map/"></a>
