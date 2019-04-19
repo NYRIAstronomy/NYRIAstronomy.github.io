@@ -52,7 +52,7 @@ image_path: /assets/img/member/harris.jpg
 
 
 <p><b>Keywords:</b> {{ page.research | lstrip }} </p>
-<p><b>Keywords:</b> {{ page.research }} </p>
+<p><b>Keywords:</b> {{ page.research | split: "," }}} </p>
 <!-- @Html.Raw(page.research) -->
 
 <p><b>Contact:</b> {{ page.email }} </p>
