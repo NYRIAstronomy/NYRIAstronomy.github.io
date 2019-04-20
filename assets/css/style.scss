@@ -33,19 +33,9 @@ html, body {
   width: 120px;
 }
 .site-header h1 h2 {
-//   position: relative;
-//   left: 110px;
-//   margin-left: 10px;	
-  display: block;
-  font-size: 1.5em;
-  color: #BF360C;
-  margin-top: 3.em;
-  margin-bottom: 0.83em;
-  margin-left: 5.0em;
-  margin-right: 0;
-  font-weight: bold;
-  line-height:25px	
-	
+  position: relative;
+  left: 110px;
+  margin-left: 10px;		
 }
 
 .site-header a {
@@ -53,18 +43,6 @@ html, body {
   text-decoration: none;
   line-height: 25px;		
 }
-
-// .site-header title {
-//   display: block;
-//   font-size: 1.5em;
-//   color: #BF360C;
-//   margin-top: 3.em;
-//   margin-bottom: 0.83em;
-//   margin-left: 5.0em;
-//   margin-right: 0;
-//   font-weight: bold;
-//   line-height:25px
-// }	
 
 
 .site-header-navigation{
