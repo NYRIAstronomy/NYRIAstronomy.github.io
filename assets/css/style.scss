@@ -38,12 +38,9 @@ html, body {
   margin-left: 10px;	
 }
 .site-header a {
-  color: #BF360C;
-  text-decoration: none;
-  line-height: 25px;	
-}
-
-.site-header title {
+//   color: #BF360C;
+//   text-decoration: none;
+//   line-height: 25px;
   display: block;
   font-size: 1.5em;
   color: #BF360C;
@@ -52,8 +49,21 @@ html, body {
   margin-left: 5.0em;
   margin-right: 0;
   font-weight: bold;
-  line-height:25px
-}	
+  line-height:25px	
+	
+}
+
+// .site-header title {
+//   display: block;
+//   font-size: 1.5em;
+//   color: #BF360C;
+//   margin-top: 3.em;
+//   margin-bottom: 0.83em;
+//   margin-left: 5.0em;
+//   margin-right: 0;
+//   font-weight: bold;
+//   line-height:25px
+// }	
 
 
 .site-header-navigation{
