@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-<!--   <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
+body {
+  margin: 0;
+}
 
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="shortcut icon" type="image/png" href="/assets/img/NYRIA_Logo_small.png">
-    <script type="text/javascript" src="https://nyriastronomy.github.io/assets/js/slideshow.js" language="JavaScript"></script>
-  </head>
- -->
-  <body>
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
 
-    <header class="site-header" role="banner">
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+</div>
+
+<div class="topnav">
+          <a href="/../news/">News</a>
+          <a href="/../about/">About</a>
+          <a href="/../members/">Members</a>
+          <a href="/../workshops/">Workshops</a>
+          <a href="/../events/">Events</a>
+          <a href="/../jobs/">Jobs</a>
+          <a href="/../links/">Links</a>
+          <a href="/../contact/">Contact</a>
+</div>
+
+<!--     <header class="site-header" role="banner">
       <a href="/../index.html">
       <img src="/assets/img/NYRIA_Logo.png" alt="">
         <h1 class="project-name">YRIA</h1>
         <h3 class="project-name">etwork of Young Researchers in Instrumentation for Astronomy</h3>        
-<!--         <img src="/assets/img/NYRIA_Logo_small.png" alt="">
-        <h1 class="project-name">NYRIA</h1>
-        <h3 class="project-name">Network of Young Researchers in Instrumentation for Astronomy</h3> -->
+
       </a>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
@@ -42,19 +78,8 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
 
-      <div class="site-header-navigation">
-        <ul>
-          <li><a href="/../news/">News</a></li>
-          <li><a href="/../about/">About</a></li>
-          <li><a href="/../members/">Members</a></li>
-          <li><a href="/../workshops/">Workshops</a></li>
-          <li><a href="/../events/">Events</a></li>
-          <li><a href="/../jobs/">Jobs</a></li>
-          <li><a href="/../links/">Links</a></li>
-          <li><a href="/../contact/">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+
+    </header> -->
 
     <main id="content" class="site-main" role="main">
       <div class="site-main-content-wrapper">
