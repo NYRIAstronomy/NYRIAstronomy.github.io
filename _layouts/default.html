@@ -21,6 +21,36 @@
     <link rel="shortcut icon" type="image/png" href="/assets/img/NYRIA_Logo_small.png">
     <script type="text/javascript" src="https://nyriastronomy.github.io/assets/js/slideshow.js" language="JavaScript"></script>
   </head>
+  
+  <style>
+    #nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
+  </style>
+  
 
   <body>
 
@@ -42,7 +72,7 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
 
-      <div class="site-header-navigation">
+      <div class="nav">
         <ul>
           <li><a href="/../news/">News</a></li>
           <li><a href="/../about/">About</a></li>
