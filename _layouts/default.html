@@ -22,38 +22,57 @@
     <script type="text/javascript" src="https://nyriastronomy.github.io/assets/js/slideshow.js" language="JavaScript"></script>
   </head>
 
-  <style>
-    
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: red;
+
+  
+  .bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/img/NYRIA_Logo.png");
+  min-height: 75%;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #333;
+.menu {
+  display: none;
 }
 </style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
   
+  
+  
+<!--   <body> -->
 
-
-  <body>
-
-    <header class="site-header" role="banner">
+<!--     <header class="site-header" role="banner">
       <a href="/../index.html">
       <img src="/assets/img/NYRIA_Logo.png" alt="">
         <h1 class="project-name">YRIA</h1>
@@ -80,7 +99,7 @@ li a:hover {
           <li><a href="/../contact/">Contact</a></li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main id="content" class="site-main" role="main">
       <div class="site-main-content-wrapper">
