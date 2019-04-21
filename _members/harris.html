@@ -49,7 +49,7 @@ image_path: /assets/img/member/harris.jpg
 <p><b>Research gate:</b> {{ page.rgate }} </p>
 
 <!-- <p><b>Keywords:</b> {{ page.keyword1 }} -- {{ page.keyword2 }} -- {{ page.keyword3 }} -- {{ page.keyword4 }} -- {{ page.keyword5 }}  </p> -->
-<p><b>Keywords:</b> {{ page.research }} </p>
+<p><b>Keywords:</b> {{ page.research.get(0) }} </p>
 <!-- 
 <p><b>Keywords:</b> {{ page.research | lstrip }} </p> -->
 
