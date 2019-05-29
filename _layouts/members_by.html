@@ -85,18 +85,29 @@ h2 {
       <div class="site-main-content-wrapper">
         <!--Read search parameters from link-->
         {% assign criterion = page.permalink | split: "/" | last | split: "=" | first %}
-        {% assign value = page.permalink | split: "/" | last | split: "=" | last | replace: "_", " " %}
+<!--         {% assign value = page.permalink | split: "/" | last | split: "=" | last | replace: "_", " " %} -->
 
         <!--Define headline according to search criterion-->
-        {% if criterion == "country" %}
+<!--         {% if criterion == "country" %}
           {% assign value = value | capitalize %}
           <h1>Members In {{ value }}</h1>
         {% elsif criterion == "research" %}
           <h1>Members Working On {{ value | capitalize }}</h1>
         {% elsif criterion == "institute" %}
           <h1>Members At {{ value | capitalize }}</h1>
-        {% endif %}
+        {% endif %} -->
 
+       {% if criterion == "country" %}
+          {% assign value = page.item_value %}
+          <h1>Members In {{ value }}</h1>
+        
+        {% elsif criterion == "research" %}
+           {% assign value = page.keyword %}  
+          <h1>Members Working On {{ value }}</h1>
+        
+        {% elsif criterion == "institute" %}
+          <h1>Members At {{ value | capitalize }}</h1>
+        {% endif %}
 	      
 	      
 	      
