@@ -72,7 +72,7 @@
         <!--Define subset of members according to search criterion-->
         {% assign member_subset = site.members | where: criterion, value %}
 
-        <table class="table">
+<!--         <table class="table">
           {% for member in member_subset %}
             <tr>
               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td>
@@ -89,8 +89,34 @@
           {% endfor %}
         </table>
       </div>
+    </main> -->
+        
+        <table class="table">
+          {% for member in member_subset %}
+            <tr>
+<!--               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td> -->
+              <td class="table-content">
+                <ul>
+<!--                   <li><b>Name:</b> <a href="{{ member.url }}">{{ member.name }}</a> </li>
+                  <li><b>Affiliation:</b> {{ member.affiliation }} </li>
+                  <li><b>Research:</b> {{ member.title }} </li>
+                  <li><b>Keywords:</b> {{ member.keywords }} </li>
+                  <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li> -->
+                   <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="20"> </p>
+                  <p><b>Affiliation:</b> {{ member.affiliation }} </p>
+                  <p><b>Research:</b> {{ member.title }} </p>
+                  <p><b>Keywords:</b> {{ member.keywords }} </p>
+                  <p><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>                 
+                </ul>
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
     </main>
-
+        
+        
+        
     <footer class="site-footer">
       <div class="site-footer-content-wrapper">
         {% if site.github.is_project_page %}
