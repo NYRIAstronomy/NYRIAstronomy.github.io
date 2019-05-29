@@ -77,6 +77,43 @@
           <h1>Members At {{ value | capitalize }}</h1>
         {% endif %}
 
+	      
+	      
+	      
+		<style>
+        .entry {
+        border: 2px solid #CB0F0F;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        background: white;
+        padding: 30px 20px 20px 20px; 
+        opacity: 1.0;
+/*         box-shadow: 1px 1px 1px 1px #CB0F0F; */
+        }
+         .entry img{
+        height: 140;
+        border: 2px solid #bbb;
+        border-radius: 15px;
+        object-fit: cover;
+        }       
+        .font-description {
+/*         font-family:verdana;  */
+/*         font-size: 12px; */
+        text-align:left;
+        font-color:black;
+/*         font-weight: bold; */
+        text-decoration: none;
+        }
+/*         .entry:hover {
+          opacity: 0.5;
+        }          */
+	      </style> 
+	      
+	      
+	      
+	      
+	      
         <!--Define subset of members according to search criterion-->
         {% assign member_subset = site.members | where: criterion, value %}
 
@@ -111,12 +148,16 @@
                   <li><b>Research:</b> {{ member.title }} </li>
                   <li><b>Keywords:</b> {{ member.keywords }} </li>
                   <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li> -->
+			 <div class="entry">
                   <a href="{{ member.url }}" style="text-decoration:none">
-                  <p { margin-top: -100px; }><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="10" border="2px solid #bbb"> </p>
-                  <p { margin-top: -20px; }><b>Affiliation:</b> {{ member.affiliation }} </p>
-                  <p { margin-top: -20px; }><b>Research:</b> {{ member.title }} </p>
-                  <p { margin-top: -20px; }><b>Keywords:</b> {{ member.keywords }} </p>
-                  <p { margin-top: -20px; }><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>                 
+            <div class="font-description">
+                <font color="black">
+			<p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="10"> </p>
+                  <p><b>Affiliation:</b> {{ member.affiliation }} </p>
+                  <p><b>Research:</b> {{ member.title }} </p>
+                  <p><b>Keywords:</b> {{ member.keywords }} </p>
+                  <p><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p> 
+			  </div></div>
                 </ul>
               </td>
             </tr>
@@ -125,9 +166,7 @@
       </div>
     </main>
         
-<!--          border: 2px solid #bbb;
-        border-radius: 15px;
-        object-fit: cover;        -->
+
         
     <footer class="site-footer">
       <div class="site-footer-content-wrapper">
