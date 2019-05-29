@@ -92,7 +92,7 @@
     </main> -->
         
         <table class="table">
-          p { margin-top: -20px; }
+         
           {% for member in member_subset %}
             <tr>
 <!--               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td> -->
@@ -104,11 +104,11 @@
                   <li><b>Keywords:</b> {{ member.keywords }} </li>
                   <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li> -->
                   <a href="{{ member.url }}" style="text-decoration:none">
-                  <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="10"> </p>
-                  <p><b>Affiliation:</b> {{ member.affiliation }} </p>
-                  <p><b>Research:</b> {{ member.title }} </p>
-                  <p><b>Keywords:</b> {{ member.keywords }} </p>
-                  <p><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>                 
+                  <p { margin-top: -20px; }><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="10"> </p>
+                  <p { margin-top: -20px; }><b>Affiliation:</b> {{ member.affiliation }} </p>
+                  <p { margin-top: -20px; }><b>Research:</b> {{ member.title }} </p>
+                  <p { margin-top: -20px; }><b>Keywords:</b> {{ member.keywords }} </p>
+                  <p { margin-top: -20px; }><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>                 
                 </ul>
               </td>
             </tr>
