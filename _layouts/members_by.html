@@ -112,7 +112,7 @@
                   <li><b>Keywords:</b> {{ member.keywords }} </li>
                   <li><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </li> -->
                   <a href="{{ member.url }}" style="text-decoration:none">
-                  <p { margin-top: -20px; }><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="10"> </p>
+                  <p { margin-top: -100px; }><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="140" align="left" hspace="10" border="2px solid #bbb"> </p>
                   <p { margin-top: -20px; }><b>Affiliation:</b> {{ member.affiliation }} </p>
                   <p { margin-top: -20px; }><b>Research:</b> {{ member.title }} </p>
                   <p { margin-top: -20px; }><b>Keywords:</b> {{ member.keywords }} </p>
@@ -125,7 +125,9 @@
       </div>
     </main>
         
-        
+<!--          border: 2px solid #bbb;
+        border-radius: 15px;
+        object-fit: cover;        -->
         
     <footer class="site-footer">
       <div class="site-footer-content-wrapper">
