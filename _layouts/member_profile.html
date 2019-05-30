@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<style>
+/* .nav {
+	width: 100%;
+	float: left;
+	margin: 1em 0 0em 0;
+	padding: 0;
+	background-color: black;
+	border-bottom: 2px solid #ccc;  
+	border-top: 2px solid #ccc; } 
+.nav ul {
+	list-style: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0; }
+.nav li {
+	float: left; }
+.nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	border-right: 0px solid #ccc; }
+.nav li:first-child a {
+	border-left: 0px solid #ccc; }
+.nav li a:hover {
+	color: white;
+	background-color: red; } */
+	
+h2 { 
+  display: block;
+  font-size: 1.5em;
+  color: #BF360C;
+  margin-top: 3.em;
+  margin-bottom: 0.83em;
+  margin-left: 6.0em;
+  margin-right: 0;
+  font-weight: bold;
+  line-height:25px
+}	
+	
+	
+	
+</style>
+	
+	
+  <head>
+	  
+
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/NYRIA_Logo_small.png">
+    <script type="text/javascript" src="https://nyriastronomy.github.io/assets/js/slideshow.js" language="JavaScript"></script>
+  </head>
+  
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+      <a href="/../index.html">
+      <img src="/assets/img/NYRIA_Logo.png" alt="", padding="20px">
+	      <div style="width:400px;">
+	 <h2 class="project-name" align="left">Network of Young Researchers in Instrumentation for Astronomy</h2>     
+	      </div>
+<!--         <h1 class="project-name">YRIA</h1> -->
+<!--         <h3 class="project-name">etwork of Young Researchers in Instrumentation for Astronomy</h3>         -->
+<!--         <img src="/assets/img/NYRIA_Logo_small.png" alt="">
+        <h1 class="project-name">NYRIA</h1>
+        <h3 class="project-name">Network of Young Researchers in Instrumentation for Astronomy</h3> -->
+      </a>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
+      {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+      {% endif %}
+
+      <div class="site-header-navigation">
+        <ul>
+          <li><a href="/../news/">News</a></li>
+          <li><a href="/../about/">About</a></li>
+          <li><a href="/../members/">Members</a></li>
+          <li><a href="/../workshops/">Workshops</a></li>
+          <li><a href="/../events/">Events</a></li>
+          <li><a href="/../jobs/">Jobs</a></li>
+          <li><a href="/../links/">Links</a></li>
+          <li><a href="/../contact/">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <main id="content" class="site-main" role="main">
+      <div class="site-main-content-wrapper">
+
+
+      <h1>{{ page.name }}</h1>
+      <img style="padding-left: 30px;" src="{{page.image_path}}" alt=" " height="320" align="right" hspace="0"  border="2">
+      <p><b>Affiliation:</b> {{ page.affiliation }}</p>
+      <p><b>Country:</b> {{ page.country }}</p>
+      <p><b>Position:</b> {{ page.position }}</p>
+        <p><b>Current Research Subject Title:</b> {{ page.title }}</p>
+
+
+
+
+      <p><b>Current Research Summary:</b> </p>
+      {{ page.summary}}</p>
+
+      <p><b>Prior Research:</b> </p>
+      {{ page.prior}}</p>
+
+      <p><b>ORCID:</b> {{ page.orcid }} </p>
+      <p><b>Personal Website:</b>  {{ page.website }} </p>
+      <p><b>LINKEDIN:</b> {{ page.linkedin }} </p>
+      <p><b>Research gate:</b> {{ page.rgate }} </p>
+
+      <!-- <p><b>Keywords:</b> {{ page.keyword1 }} -- {{ page.keyword2 }} -- {{ page.keyword3 }} -- {{ page.keyword4 }} -- {{ page.keyword5 }}  </p> -->
+      <p><b>Keywords:</b> {{ page.keywords }} </p>
+      <!-- 
+      <p><b>Keywords:</b> {{ page.research | lstrip }} </p> -->
+
+      <p><b>Contact:</b> {{ page.email }} </p>
+
+
+
+
+
+
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="site-footer">
+      <div class="site-footer-content-wrapper">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        <span class="site-footer-credits">Copyright &copy; 2019 NYRIA &mdash; <a href="/../impressum/">Impressum</a> &mdash; <a href="/../contact/">Contact</a></span>
+      </div>
+    </footer>
+
+  </body>
+</html>
