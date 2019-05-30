@@ -1,51 +1,43 @@
 ---
 layout: default
 title:  "Members"
-permalink: /members/People/greggio/
+permalink: /members/People/harris/
 
-name: "Davide Greggio"
-affiliation:  "INAF-Padova"
-country: "Italy" 
-position: "Post-Doctoral Researcher" 
-title: "Instrumentation for high angular resolution astronomy"
+name: "Robert Harris"
+affiliation: "Landessternwarte (LSW), GER"
+country: "Germany"
+position: "Post-Doctoral Researcher"
+title:  "Astrophotonics"
 
-summary: ""
+summary: "I work in the field of Astrophotonics. This field aims to make use emerging technologies developed for the telecommunications industry within astronomy. During my PhD I created reformatting devices using Ultrafast Laser Inscription and custom fibres in collaboration with Heriot-Watt and Bath Universities. Since then I have branched out to include 3D printing of optics, with Karlsruhe Institute for Technology. Currently I am working with PhD students on wavefront sensing, vibration correction and improving coupling efficiency and stability of instruments"
 
-prior:
+prior: "Durham University, St Andrews"
 
-orcid: 
-website: 
-linkedin:
-rgate:
+orcid: "0000-0002-8518-4640"
+website: "https://www.lsw.uni-heidelberg.de/users/rharris/"
+linkedin: "https://www.linkedin.com/in/robert-harris-219667127/"
+rgate: "https://www.researchgate.net/profile/Robert_Harris46"
 
-<!-- research: ["Optical Design" , "High Contrast Imaging" , "Stray Light Analysis" , "JANUS" , "SHARK" ] -->
-<!-- keywords: "Optical Design -- High Contrast Imaging -- Stray Light Analysis -- JANUS -- SHARK" -->
+research: ["Astrophotonics" , "Spectroscopy" , "Fibres" , "Adaptive Optics"]
+keywords: "Astrophotonics -- Spectroscopy -- Fibres -- Adaptive Optics"
+ 
+email:  "rharris@lsw.uni-heidelberg.de"
 
-keyword1: "Optical Design"
-keyword2: "High Contrast Imaging"
-keyword3: "Stray Light Analysis"
-keyword4: "JANUS"
-keyword5: "SHARK"
-
-email: "davide.greggio@oapd.inaf.it"
-
-image_path: /assets/img/member/greggio.jpg
+image_path: /assets/img/member/harris.jpg
 ---
 
 <h1>{{ page.name }}</h1>
+<img style="padding-left: 30px;" src="{{page.image_path}}" alt=" " height="320" align="right" hspace="0"  border="2">
 <p><b>Affiliation:</b> {{ page.affiliation }}</p>
 <p><b>Country:</b> {{ page.country }}</p>
 <p><b>Position:</b> {{ page.position }}</p>
+  <p><b>Current Research Subject Title:</b> {{ page.title }}</p>
 
 
-<p><b>Current Research Subject Title:</b> {{ page.title }}</p>
+
 
 <p><b>Current Research Summary:</b> </p>
-<p>As post-doc at the University of Padova, I am responsible for the optical design and performance characterization of both ground and space-based instrumentation. I am currently involved in the following projects: </p>
-<p>· JANUS: the visible camera of the JUICE (Jupiter ICy moons Explorer) satellite, the large mission of ESA dedicated to the study of the Jovian system. </p>
-<p>· SHARK-NIR: the 2nd generation instrument for the Large Binocular Telescope dedicated to high contrast imaging. </p>
-<p>· PLATO: the medium-class mission of ESA whose objective is to find and study a large number of extrasolar planetary down to earth-sized planets orbiting in the habitable zone of solar-like stars. </p>
-
+{{ page.summary}}</p>
 
 <p><b>Prior Research:</b> </p>
 {{ page.prior}}</p>
@@ -55,7 +47,9 @@ image_path: /assets/img/member/greggio.jpg
 <p><b>LINKEDIN:</b> {{ page.linkedin }} </p>
 <p><b>Research gate:</b> {{ page.rgate }} </p>
 
+<!-- <p><b>Keywords:</b> {{ page.keyword1 }} -- {{ page.keyword2 }} -- {{ page.keyword3 }} -- {{ page.keyword4 }} -- {{ page.keyword5 }}  </p> -->
+<p><b>Keywords:</b> {{ page.keywords }} </p>
+<!-- 
+<p><b>Keywords:</b> {{ page.research | lstrip }} </p> -->
 
-<p><b>Keywords:</b> {{ page.keyword1 }} -- {{ page.keyword2 }} -- {{ page.keyword3 }} -- {{ page.keyword4 }} -- {{ page.keyword5 }}  </p>
-<!-- <p><b>Keywords:</b> {{ page.keywords }} </p> -->
 <p><b>Contact:</b> {{ page.email }} </p>
