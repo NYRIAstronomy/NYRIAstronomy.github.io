@@ -108,6 +108,12 @@ h2 {
         {% elsif criterion == "affiliation" %}
           {% assign value = page.item_value %}	      
           <h1>Members At {{ value }}</h1>
+	      
+	      
+        {% elsif criterion == "position" %}
+          {% assign value = page.item_value %}	      
+          <h1>Members At {{ value }}</h1>
+	      
         {% endif %}
 	      
 	      
