@@ -106,6 +106,7 @@ h2 {
           <h1>Members Working On {{ value }}</h1>
         
         {% elsif criterion == "institute" %}
+          {% assign value = page.item_value %}	      
           <h1>Members At {{ value | capitalize }}</h1>
         {% endif %}
 	      
