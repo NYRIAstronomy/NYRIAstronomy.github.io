@@ -8,8 +8,10 @@ permalink: /news/
 
 <p>Here are aricles written by NYRIA members about their work and instrumentation related intrests.</p>
 
-<p>New content!</p>
-
 {% for post in site.posts reversed %}
+  <div class="post-container">
     <h3>{{ post.title }}</h3>
+    {{ post.content }}
+  </div>
+
 {% endfor %}
