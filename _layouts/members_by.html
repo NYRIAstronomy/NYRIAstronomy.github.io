@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-	
+
   <style>
-h2 { 
+h2 {
   display: block;
   font-size: 1.5em;
   color: #BF360C;
@@ -12,14 +12,14 @@ h2 {
   margin-right: 0;
   font-weight: bold;
   line-height:25px
-}	
-	
-	
-	
-</style>	
-	
-	
-	
+}
+
+
+
+</style>
+
+
+
   <head>
 
     {% if site.google_analytics %}
@@ -50,14 +50,14 @@ h2 {
         <h1 class="project-name">NYRIA</h1>
         <h3 class="project-name">Network of Young Researchers in Instrumentation for Astronomy</h3>
       </a> -->
-      
+
        <a href="/../index.html">
       <img src="/assets/img/NYRIA_Logo.png" alt="", padding="20px">
 	      <div style="width:400px;">
-	 <h2 class="project-name" align="left">Network of Young Researchers in Instrumentation for Astronomy</h2>     
+	 <h2 class="project-name" align="left">Network of Young Researchers in Instrumentation for Astronomy</h2>
 	      </div>
-      </a>     
-      
+      </a>
+
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
@@ -100,24 +100,24 @@ h2 {
        {% if criterion == "country" %}
           {% assign value = page.item_value %}
           <h1>Members In {{ value }}</h1>
-        
+
         {% elsif criterion == "research" %}
-           {% assign value = page.keyword %}  
+           {% assign value = page.keyword %}
           <h1>Members Working On {{ value }}</h1>
-        
+
         {% elsif criterion == "affiliation" %}
-          {% assign value = page.item_value %}	      
+          {% assign value = page.item_value %}
           <h1>Members At {{ value }}</h1>
-	      
-	      
+
+
         {% elsif criterion == "position" %}
-          {% assign value = page.item_value %}	      
+          {% assign value = page.item_value %}
           <h1>Members At {{ value }}</h1>
-	      
+
         {% endif %}
-	      
-	      
-	      
+
+
+
 		<style>
         .entry {
         }
@@ -126,7 +126,7 @@ h2 {
         border: 2px solid #bbb;
         border-radius: 15px;
         object-fit: cover;
-        }       
+        }
         .font-description {
 /*         font-family:verdana;  */
 /*         font-size: 12px; */
@@ -137,13 +137,13 @@ h2 {
         }
         .entry:hover {
           opacity: 0.2;
-        }         
-	      </style> 
-	      
-	      
-	      
-	      
-	      
+        }
+	      </style>
+
+
+
+
+
         <!--Define subset of members according to search criterion-->
         {% assign member_subset = site.members | where: criterion, value %}
 
@@ -165,9 +165,9 @@ h2 {
         </table>
       </div>
     </main> -->
-        
+
         <table class="table">
-         
+
           {% for member in member_subset %}
             <tr>
 <!--               <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td> -->
@@ -186,7 +186,7 @@ h2 {
                   <p><b>Affiliation:</b> {{ member.affiliation }} </p>
                   <p><b>Research:</b> {{ member.title }} </p>
                   <p><b>Keywords:</b> {{ member.keywords }} </p>
-                  <p><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p> 
+                  <p><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
 			  </div></div>
                 </ul>
               </td>
@@ -195,15 +195,15 @@ h2 {
         </table>
       </div>
     </main>
-        
 
-        
+
+
     <footer class="site-footer">
       <div class="site-footer-content-wrapper">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
-        <span class="site-footer-credits">Copyright &copy; 2019 NYRIA &mdash; <a href="/../impressum/">Impressum</a> &mdash; <a href="/../contact/">Contact</a></span>
+        <span class="site-footer-credits">Copyright &copy; 2019 NYRIA &mdash; <a href="/../disclaimer/">Disclaimer</a> &mdash; <a href="/../contact/">Contact</a></span>
       </div>
     </footer>
 
