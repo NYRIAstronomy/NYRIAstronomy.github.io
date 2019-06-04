@@ -8,7 +8,7 @@ permalink: /posts/
 
 <p>Here are aricles written by NYRIA members about their work and instrumentation related intrests.</p>
 
-{% for post in site.posts reversed %}
+<!-- {% for post in site.posts reversed %}
   <div class="post-container">
     <a href="{{ post.link }}">
     <h3>{{ post.title }}</h3>
@@ -16,4 +16,17 @@ permalink: /posts/
     <a href="{{ post.link }}">Read more...</a>
     </a>
   </div>
-{% endfor %}
+{% endfor %} -->
+<table class="table">
+  {% for post in site.posts reversed %}
+    <tr>
+      <td class="jobs-table-content">
+          <h3>{{ post.title }}</h3>
+          <ul>
+            <li><b>Location:</b> {{ post.author }}</li>
+          </ul>
+        </a>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
