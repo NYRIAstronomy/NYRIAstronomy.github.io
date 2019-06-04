@@ -10,8 +10,10 @@ permalink: /posts/
 
 {% for post in site.posts reversed %}
   <div class="post-container">
+    <a href="{{ post.link }}">
     <h3>{{ post.title }}</h3>
     {{ post.content }}
+    <a href="{{ post.link }}">Read more...</a>
+    </a>
   </div>
-
 {% endfor %}

@@ -13,10 +13,10 @@ collections:
     output          : true
   links:
     output          : true
+  posts:
+    output          : true
   members:
     output          : true
     people          : true
-  posts:
-    output          : true
   workshops:
     output          : true
