@@ -21,47 +21,52 @@ permalink: /posts/
 <style>
 .container {
   position: relative;
-  height: 171px;
-  margin: 20px;
-  border: 1px solid #bbb;
-  border-radius: 15px;
-  opacity: 0.75;
+  text-align: center;
+  color: white;
 }
-.container img{
-  height: 100%;
-  border: 1px solid #bbb;
-  border-radius: 15px;
-  object-fit: cover;
-  transition: .5s ease;
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
-.container .text-block {
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
-  text-align: center;
   transform: translate(-50%, -50%);
-  min-width: 2cm;
-  font-weight: bold;
-  background-color: red;
-  border: 10px solid red;
-  border-radius: 10px;
-}
-.container a {
-  color: white;
-  text-decoration: none;
-}
-.container:hover {
-  opacity: 1.0;
-  transform: scale(1.2);  
 }
 </style>
+</head>
+<body>
 
-<div class="flexible-matrix">
-  <div class="container">
-    <a href="/../posts/2019-06-01-the-obstech-chonicle/">
-      <img src="/assets/img/member/research/moon.jpg" alt="">
-      <div class="text-block">"The Obstech Chonicles/</div>
-    </a>
-  </div>
-  
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container">
+  <img src="/assets/img/member/research/moon.jpg" alt="Snow" style="width:80%;">
+  <div class="top-left">The Obstech Chronicle</div>
+  <div class="bottom-right">It began when I started thinking about transforming the lab, where I was working back ...</div>
 </div>
+
+</body>
+
