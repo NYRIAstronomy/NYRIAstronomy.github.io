@@ -8,7 +8,7 @@ permalink: /posts/
 
 <p>Here are aricles written by NYRIA members about their work and instrumentation related intrests.</p>
 
-{% for post in site.posts reversed %}
+<!-- {% for post in site.posts reversed %}
   <div class="post-container">
     <a href="{{ post.link }}">
     <h3>{{ post.title }}</h3>
@@ -16,4 +16,21 @@ permalink: /posts/
     <a href="{{ post.link }}">Read more...</a>
     </a>
   </div>
-{% endfor %}
+{% endfor %} -->
+<table class="table">
+  {% for event in site.events reversed %}
+    <tr>
+      <td class="jobs-table-content">
+        <a href="{{ event.link }}" target="_blank">
+          <h3>{{ event.title }}</h3>
+          <ul>
+            <li><b>Location:</b> {{ event.location }}</li>
+            <li><b>Dates:</b> {{ event.dates }}, {{ event.year }}</li>
+            <li><b>Link:</b> <a href="{{ event.link }}" target="_blank">{{ event.link }}</a></li>
+            <li><b>Application deadline:</b> {{ event.deadline }}</li>
+          </ul>
+        </a>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
