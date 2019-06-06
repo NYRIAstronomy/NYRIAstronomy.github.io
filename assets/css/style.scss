@@ -3,13 +3,14 @@
 
 @import "{{ site.theme }}";
 
+
 /* ---------- general design: body ---------- */
 html, body {
   height: 100%;
 }
 
-/* ---------- general design: header ---------- */
 
+/* ---------- general design: header ---------- */
 .site-header {
   z-index: 10;
   top: 0;
@@ -150,6 +151,7 @@ html, body {
 
 /* ---------- particular design classes ---------- */
 
+/* slideshow */
 .slideshow-container {
   width: 100%;
   position: relative;
@@ -206,6 +208,7 @@ html, body {
   background-color: white;
 }
 
+/* link-icons */
 .flexible-matrix {
   display: flex;
   display: -ms-flexbox;
@@ -254,7 +257,45 @@ html, body {
   color: white;
   text-decoration: none;
 }
+.link-icon-container {
+  position: relative;
+  height: 171px;
+  width: 171px;
+  margin: 20px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+.link-icon-container img{
+  height: 100%;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+.link-icon-container .text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  min-width: 2cm;
+  font-weight: bold;
+  background-color: red;
+  border: 10px solid red;
+  border-radius: 10px;
+}
+.link-icon-container a {
+  color: white;
+  text-decoration: none;
+}
+.link-icon-container:hover {
+  opacity: 1.0;
+  transform: scale(1.2);
+}
 
+
+/* tables */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -298,6 +339,8 @@ html, body {
   width: 100%;
 }
 
+
+/* posts */
 .post-container {
   width: 80%;
   height: 5cm;
@@ -305,6 +348,8 @@ html, body {
   padding-right: 10%;
 }
 
+
+/* images */
 .stand-alone-image {
   display: block;
   margin-left: auto;
@@ -319,6 +364,8 @@ html, body {
   margin-right: 15%;
 }
 
+
+/* text layout */
 .multi-column {
   column-count: 3;
 }
