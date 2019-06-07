@@ -386,9 +386,9 @@ html, body {
   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
   -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
-  -webkit-column-rule: 4px solid grey; /* Chrome, Safari, Opera */
-  -moz-column-rule: 4px solid grey; /* Firefox */
-  column-rule: 4px solid grey;
+  -webkit-column-rule: 1px solid grey; /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid grey; /* Firefox */
+  column-rule: 1px solid grey;
 }
 
 .triple-column {
@@ -398,7 +398,7 @@ html, body {
   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
   -moz-column-gap: 40px; /* Firefox */
   column-gap: 40px;
-  -webkit-column-rule: 4px solid grey; /* Chrome, Safari, Opera */
-  -moz-column-rule: 4px solid grey; /* Firefox */
-  column-rule: 4px solid grey;
+  -webkit-column-rule: 1px solid grey; /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid grey; /* Firefox */
+  column-rule: 1px solid grey;
 }
