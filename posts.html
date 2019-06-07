@@ -19,28 +19,66 @@ permalink: /posts/
 {% endfor %} -->
 
 <style>
-.container {
+.link-icon-container {
+  position: relative;
+  height: 230px;
+  width: 2800px;
+  margin: 20px;
+  border: 1px solid #bbb;
+  border-radius: 5%;
+  opacity: 0.75;
+  object-fit: cover;
 }
-.container img{
-height: 180px;
-border: 2px solid #bbb;
-border-radius: 15px;
-object-fit: cover;
+.link-icon-container img{
+  height: 100%;
+  width: auto;
+  border: 1px solid #bbb;
+  border-radius: 5%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+.link-icon-container .text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-95%, -180%);
+  min-width: 2cm;
+  font-weight: bold;
+  font-size: 20pt;
+  background-color: red;
+  border: 10px solid red;
+  border-radius: 10px;
+  
+}
+.link-icon-container a {
+  color: white;
+  text-decoration: none;
+}
+.link-icon-container:hover {
+  opacity: 1.0;
+  transform: scale(1.2);
+}
+.subtitle {
+  font-size: 20pt;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 10%;
 }
 </style>
 
-<div class="post-container">
-  
-   <div class="container">
-     <figure>
-<!--     <a href="/../members/by=position/position=phd/"> -->
-      <img src="/assets/img/member/research/color-cosmos.jpg" alt="" height="180px">
-<!--     <div class="text-block">PhD Student</div> -->
 
-       <figcaption>
-  It began when I started thinking about transforming the lab, where I was working back...
-      </figcaption>
-     </figure>
+  
+   <div class="link-icon-container">
+
+<!--     <a href="/../members/by=position/position=phd/"> -->
+      <img src="/assets/img/member/research/color-cosmos.jpg" alt="" height="300px">
+  <div class="text-block">The Obstech Chronicle</div>
+
+<p class="subtitle"> 
+  It began when I started thinking about transforming the lab, where I was working back... 
+</p>
   </div>
 
-</div>
+
+
