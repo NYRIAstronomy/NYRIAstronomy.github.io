@@ -359,6 +359,7 @@ html, body {
   margin: 50px;
   padding: 25px;
   border: 1px solid grey;
+  box-shadow: 10px 10px 8px gray;
 
   display: block;
   float: inherit;
@@ -375,8 +376,7 @@ html, body {
 .post-container img {
   height: 80%;
   float: left;
-  margin-right: 10px;
-  box-shadow: 10px 10px 8px gray;
+  margin-right: 10px;  
 }
 .post-author {
   text-align: right;
