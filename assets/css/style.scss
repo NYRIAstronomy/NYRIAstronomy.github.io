@@ -360,6 +360,9 @@ html, body {
   padding: 25px;
   border: 1px solid grey;
 
+  display: block;
+  float: inherit;
+
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
