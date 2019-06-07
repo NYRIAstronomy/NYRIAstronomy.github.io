@@ -372,6 +372,10 @@ html, body {
 .post-container img {
   height: 80%;
   float: left;
+  margin-right: 10px;
+}
+.post-title {
+  text-decoration: none;
 }
 .post-author {
   text-align: right;
