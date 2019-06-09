@@ -3,6 +3,42 @@ layout: default
 title:  "Workshops"
 permalink: /workshops/
 ---
+.link-icon-container {
+  position: relative;
+  height: 171px;
+  width: 171px;
+  margin: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10%;
+  opacity: 0.75;
+}
+.link-icon-container img{
+  height: 100%;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+.link-icon-container .text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  min-width: 2cm;
+  font-weight: bold;
+  background-color: red;
+  border: 10px solid red;
+  border-radius: 10px;
+}
+.link-icon-container a {
+  color: white;
+  text-decoration: none;
+}
+.link-icon-container:hover {
+  opacity: 1.0;
+  transform: scale(1.2);
+}
 
 
 <!--
@@ -27,7 +63,7 @@ permalink: /workshops/
     {% if forloop.first %}
       {% continue %}
     {% endif %}
-      <div class="link-box">
+      <div class="link-icon-container">
         <a href="{{ workshop.url }}">
           <img src="{{ workshop.image }}" alt="">
         </a>
@@ -37,3 +73,11 @@ permalink: /workshops/
       </div>
   {% endfor %}
 </div>
+
+
+<!--   <div class="link-icon-container">
+    <a href="/../members/by=research/">
+      <img src="/assets/img/icons/research.jpg" alt="">
+      <div class="link-box-text">Research</div>
+    </a>
+  </div> -->
