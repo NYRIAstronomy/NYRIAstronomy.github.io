@@ -3,6 +3,8 @@ source              : .
 destination         : ./_site
 collections_dir     : .
 plugins_dir         : _plugins
+plugins:
+  - jekyll-seo-tag
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
