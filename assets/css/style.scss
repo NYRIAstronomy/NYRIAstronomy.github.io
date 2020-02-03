@@ -175,6 +175,31 @@ h2 {
   color: white;
 }
 
+.site-footer-navigation{
+  position: relative;
+  right: 0;
+  z-index: -1;
+  top: 6px;
+}
+.site-footer-navigation ul {
+  float: right;
+  display: inline;
+}
+.site-footer-navigation li {
+  display: inline;
+}
+.site-footer-navigation a {
+  color: white;
+  text-decoration: none;
+  border: 5px solid #3D3C3A;
+}
+.site-footer-navigation a:hover {
+  background-color: #BF360C;
+  color: white;
+  border: 5px solid #BF360C;
+  border-radius: 5px;
+}
+
 
 /* ---------- particular design classes ---------- */
 
