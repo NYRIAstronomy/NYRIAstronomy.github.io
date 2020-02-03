@@ -159,9 +159,9 @@ h2 {
   z-index: 0;
   position: relative;
   bottom: 0;
-	margin-left: 10%;
-	margin-right: 10%;
-	width: 80%;
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
   height: 60px;
   text-align: left;
   background-color: inherit;
@@ -195,10 +195,10 @@ h2 {
 }
 .site-footer-navigation ul {
   float: right;
-  display: inline;
+  display: inherit;
 }
 .site-footer-navigation li {
-  display: inline;
+  display: inherit;
 }
 .site-footer-navigation a {
   text-decoration: none;
