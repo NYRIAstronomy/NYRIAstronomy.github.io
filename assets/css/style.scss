@@ -187,7 +187,7 @@ h2 {
   position: relative;
   right: 0;
   height: 60px;
-  width: 60;
+  width: 60%;
   text-align: right;
   vertical-align: middle;
 
@@ -203,7 +203,7 @@ h2 {
 .site-footer-navigation a {
   text-decoration: none;
   color: white;
-  border: 5px solid #3D3C3A;
+  border: 5px solid transparent;
 }
 .site-footer-navigation a:hover {
   color: #BF360C;
