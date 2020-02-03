@@ -193,7 +193,9 @@ h2 {
   z-index: 0;
   position: absolute;
   bottom: 0;
-	width: 100%;
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
 	height: 60px;
   text-align: left;
   background-color: #3D3C3A;
@@ -204,9 +206,9 @@ h2 {
 .site-footer-credits {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: inherit;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+  text-align: left;
   font-size: 14pt;
 }
 .site-footer-credits a {
@@ -215,9 +217,10 @@ h2 {
 
 .site-footer-navigation{
   position: relative;
+  text-align: right;
   right: 0;
   z-index: -1;
-  top: 6px;
+  top: 50%;
 }
 .site-footer-navigation ul {
   float: right;
@@ -227,15 +230,12 @@ h2 {
   display: inline;
 }
 .site-footer-navigation a {
-  color: white;
   text-decoration: none;
+  color: white;
   border: 5px solid #3D3C3A;
 }
 .site-footer-navigation a:hover {
-  background-color: #BF360C;
-  color: white;
-  border: 5px solid #BF360C;
-  border-radius: 5px;
+  color: #BF360C;
 }
 
 
