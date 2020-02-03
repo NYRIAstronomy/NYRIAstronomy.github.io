@@ -176,6 +176,8 @@ h2 {
   width: 100%;
   margin-right: 60%;
   text-align: left;
+  display: table-cell;
+  vertical-align: middle;
   background-color: transparent;
 }
 
@@ -186,6 +188,8 @@ h2 {
   height: 60px;
   width: 60%;
   text-align: right;
+  display: table-cell;
+  vertical-align: middle;
 
   background-color: transparent;
 }
