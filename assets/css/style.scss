@@ -104,7 +104,7 @@ html, body {
 
 .site-main-content-wrapper {
   width: 100%;
-  min-height: 80%;
+  //min-height: 80%;
 
   padding: 25px;
   text-align: justify;
@@ -128,19 +128,6 @@ html, body {
   padding-bottom: 5px;
 }
 
-/*
-h2 {
-  display: block;
-  font-size: 1.5em;
-  color: #BF360C;
-  margin-top: 3.em;
-  margin-bottom: 0.83em;
-  margin-left: 6.0em;
-  margin-right: 0;
-  font-weight: bold;
-  line-height:25px
-}
-*/
 
 
 /* ---------- general design: footer ---------- */
@@ -154,7 +141,6 @@ h2 {
   width: 100%;
 	padding-left: 15%;
 	padding-right: 15%;
-	//padding-top: 15px;
   background-color: #3D3C3A;
 }
 
@@ -162,9 +148,6 @@ h2 {
   z-index: 0;
   position: relative;
   bottom: 0;
-	//width: 70%;
-  //height: 60px;
-  //text-align: left;
   background-color: inherit;
   color: white;
 
@@ -178,8 +161,6 @@ h2 {
   margin-right: 60%;
   padding-top: 15px;
   text-align: left;
-  //display: table-cell;
-  //vertical-align: middle;
   background-color: transparent;
 }
 
@@ -197,11 +178,9 @@ h2 {
 .site-footer-navigation ul {
   float: right;
   display: inline;
-  //vertical-align: middle;
 }
 .site-footer-navigation li {
   display: inline;
-  //vertical-align: middle;
 }
 .site-footer-navigation a {
   text-decoration: none;
