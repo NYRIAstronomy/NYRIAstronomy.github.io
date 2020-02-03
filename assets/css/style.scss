@@ -150,8 +150,7 @@ h2 {
   z-index: 0;
   top: 0;
   width: 100%;
-  margin-top: 2cm;
-  height: 2cm;
+  height: 100px;
   background-color: #3D3C3A;
 }
 
@@ -161,7 +160,6 @@ h2 {
   bottom: 0;
 	padding-left: 10%;
 	padding-right: 10%;
-	height: 60px;
   text-align: left;
   background-color: inherit;
   color: white;
@@ -170,11 +168,7 @@ h2 {
 }
 .site-footer-credits {
   position: absolute;
-  top: 50%;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
   text-align: left;
-  font-size: 14pt;
 }
 .site-footer-credits a {
   color: white;
@@ -183,9 +177,7 @@ h2 {
 .site-footer-navigation{
   position: relative;
   text-align: right;
-  right: 0;
   z-index: -1;
-  top: 50%;
 }
 .site-footer-navigation ul {
   float: right;
