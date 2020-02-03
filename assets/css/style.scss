@@ -154,7 +154,7 @@ h2 {
   width: 100%;
 	padding-left: 15%;
 	padding-right: 15%;
-	padding-top: 15px;
+	//padding-top: 15px;
   background-color: #3D3C3A;
 }
 
@@ -176,6 +176,7 @@ h2 {
   height: 60px;
   width: 100%;
   margin-right: 60%;
+  padding-top: 15px;
   text-align: left;
   //display: table-cell;
   //vertical-align: middle;
@@ -189,17 +190,18 @@ h2 {
   height: 60px;
   width: 60%;
   text-align: right;
+  padding-top: 15px;
 
   background-color: transparent;
 }
 .site-footer-navigation ul {
   float: right;
   display: inline;
-  vertical-align: middle;
+  //vertical-align: middle;
 }
 .site-footer-navigation li {
   display: inline;
-  vertical-align: middle;
+  //vertical-align: middle;
 }
 .site-footer-navigation a {
   text-decoration: none;
