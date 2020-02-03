@@ -164,7 +164,7 @@ h2 {
 	width: 80%;
   height: 60px;
   text-align: left;
-  background-color: red;
+  background-color: inherit;
   color: white;
 
   opacity: 1.0;
@@ -178,13 +178,15 @@ h2 {
   text-align: left;
   vertical-align: middle;
   background-color: green;
+
+  opacity: 0.5;
 }
 .site-footer-credits a {
   color: white;
 }
 
 .site-footer-navigation{
-  z-index: -1;
+  //z-index: -1;
   position: absolute;
   top: 0;
   right: 0;
@@ -194,6 +196,7 @@ h2 {
   vertical-align: middle;
 
   background-color: blue;
+  opacity: 0.5;
 }
 .site-footer-navigation ul {
   float: right;
