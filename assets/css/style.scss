@@ -16,8 +16,8 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 10%;
   padding-right: 10%;
   position: fixed;
@@ -60,6 +60,8 @@ html, body {
   position: relative;
   left: 90px;
   font-size: 1.5em;
+  font-weight: bold;
+  display: block;
 }
 
 .site-header-navigation{
