@@ -8,9 +8,6 @@
 html, body {
   height: 100%;
 }
-body {
-  min-height: 100%;
-}
 
 
 /* ---------- general design: header ---------- */
@@ -140,7 +137,7 @@ body {
 /* ---------- general design: footer ---------- */
 
 .site-footer {
-  position: relative;
+  position: absolute;
   z-index: 0;
   bottom: 0;
   height: 60px;
