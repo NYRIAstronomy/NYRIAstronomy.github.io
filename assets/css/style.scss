@@ -54,7 +54,13 @@ html, body {
   padding: 20px;
 }
 .site-header-logo img {
-  height: 100px;
+  width: 80px;
+}
+.site-header-logo-text {
+  position: relative;
+  left: 90px;
+  width: 20%;
+  font-size: 80px;
 }
 
 .site-header-navigation{
