@@ -55,8 +55,6 @@
       </div>
     </header>
 
-
-
 		<style>
         .entry {
         }
@@ -65,52 +63,41 @@
         border: 2px solid #bbb;
         border-radius: 15px;
         object-fit: cover;
-/* 	padding-left: 30px;
-	padding-bottom: 30px; */
+        /*padding-left: 30px;
+	      padding-bottom: 30px; */
         }
-
-	      </style>
-
-
-
-
-
-
-
+	  </style>
 
     <main id="content" class="site-main" role="main">
       <div class="site-main-content-wrapper">
 
+        <h1>{{ page.name }}</h1>
 
-      <h1>{{ page.name }}</h1>
+        <div class="entry">
+          <img  src="{{page.image_path}}" alt=" " height="320" align="right" vspace="20" hspace="20">
+          <p><b>Affiliation:</b> {{ page.affiliation }}</p>
+          <p><b>Joint Affiliation:</b> {{ page.jointaffiliation }}</p>
+          <p><b>Country:</b> {{ page.country }}</p>
+          <p><b>Position:</b> {{ page.position }}</p>
+          <p><b>Current Research Subject Title:</b> {{ page.title }}</p>
 
-	     <div class="entry">
-      <img  src="{{page.image_path}}" alt=" " height="320" align="right" vspace="20" hspace="20">
-      <p><b>Affiliation:</b> {{ page.affiliation }}</p>
-      <p><b>Joint Affiliation:</b> {{ page.jointaffiliation }}</p>
-      <p><b>Country:</b> {{ page.country }}</p>
-      <p><b>Position:</b> {{ page.position }}</p>
-      <p><b>Current Research Subject Title:</b> {{ page.title }}</p>
+          {{ content }}
 
-	{{ content }}
+          <!-- <p><b>Current Research Summary:</b> </p>
+          {{ page.summary}}</p>
 
+          <p><b>Prior Research:</b> </p>
+          {{ page.prior}}</p> -->
 
-<!--       <p><b>Current Research Summary:</b> </p>
-      {{ page.summary}}</p>
+          <p><b>ORCID:</b> {{ page.orcid }} </p>
+          <p><b>Personal Website:</b>  {{ page.website }} </p>
+          <p><b>LINKEDIN:</b> {{ page.linkedin }} </p>
+          <p><b>Research gate:</b> {{ page.rgate }} </p>
 
-      <p><b>Prior Research:</b> </p>
-      {{ page.prior}}</p> -->
+          <p><b>Keywords:</b> {{ page.keywords }} </p>
 
-      <p><b>ORCID:</b> {{ page.orcid }} </p>
-      <p><b>Personal Website:</b>  {{ page.website }} </p>
-      <p><b>LINKEDIN:</b> {{ page.linkedin }} </p>
-      <p><b>Research gate:</b> {{ page.rgate }} </p>
-
-      <p><b>Keywords:</b> {{ page.keywords }} </p>
-
-      <p><b>Contact:</b> {{ page.email }} </p>
-
-	      </div>
+          <p><b>Contact:</b> {{ page.email }} </p>
+        </div>
       </div>
     </main>
 
