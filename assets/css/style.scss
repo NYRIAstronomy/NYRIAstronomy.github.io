@@ -57,7 +57,8 @@ html, body {
   height: 100%;
 }
 .site-header-logo-text {
-  position: relative;
+  position: absolute;
+  top: 0;
   left: 90px;
   width: 100%;
   font-size: 1.5em;
