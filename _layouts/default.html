@@ -27,14 +27,12 @@
   <body>
 
     <header class="site-header" role="banner">
-      <div class="site-header-logo">
-        <a href="/../index.html">
-          <img src="/assets/img/NYRIA_Logo.png" alt="">
-          <div style="width:400px;">
-            <h2 class="project-name" align="left">Network of<br>Young<br>Researchers in <br>Instrumentation for <br>Astronomy</h2>
-          </div>
-        </a>
-      </div>
+      <a class="site-header-logo" href="/../index.html">
+        <img src="/assets/img/NYRIA_Logo.png" alt="">
+        <div style="width:400px;">
+          <h2 class="project-name" align="left">Network of<br>Young<br>Researchers in <br>Instrumentation for <br>Astronomy</h2>
+        </div>
+      </a>
 
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
