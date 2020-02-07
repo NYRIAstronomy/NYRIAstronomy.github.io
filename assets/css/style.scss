@@ -29,10 +29,6 @@ html, body {
 
   opacity: 1.0;
 }
-.site-header img {
-  float: left;
-  width: 120px;
-}
 .site-header h1 h2 {
   position: relative;
   left: 110px;
@@ -45,6 +41,19 @@ html, body {
   line-height: 25px;
 }
 
+.site-header-logo {
+  position: relative;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  margin-right: 60%;
+  padding-top: 15px;
+  text-align: left;
+  background-color: transparent;
+  float: left;
+  width: 120px;
+  padding: 20px;
+}
 
 .site-header-navigation{
   position: relative;
