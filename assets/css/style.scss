@@ -46,23 +46,21 @@ html, body {
 
 .site-header-logo {
   position: relative;
-  left: 0;
   height: 100%;
   width: 100%;
-  text-align: left;
-  background-color: red;
+  left: 0;
   float: left;
   display: inline;
-  width: 120px;
-  padding: 20px;
+  text-align: left;
+  background-color: red;
 }
 .site-header-logo img {
-  height: 90px;
+  height: 100%;
 }
 .site-header-logo-text {
   position: relative;
   left: 90px;
-  width: 400px;
+  width: inherit;
   font-size: 1.5em;
   font-weight: bold;
   display: block;
