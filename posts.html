@@ -4,50 +4,214 @@ title:  "Network of Young Researchers in Instrumentation for Astronomy"
 permalink: /posts/
 ---
 
-<h1>Posts</h1>
+<style>
+section{
+    padding:60px 0px;
+    font-family: 'Raleway', sans-serif;
+}
 
-<p>Here are aricles written by NYRIA members about their work and instrumentation related intrests.</p>
+h2 {
+    color: #4C4C4C;
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:30px;
+    font-family: 'Raleway', sans-serif;
+}
 
-<!-- {% for post in site.posts reversed %}
-  <div class="post-container">
-    <a href="{{ post.link }}">
-    <h3>{{ post.title }}</h3>
-    {{ post.content }}
-    <a href="{{ post.link }}">Read more...</a>
-    </a>
-  </div>
-{% endfor %} -->
+p{
+    font-size:13px;
+}
+
+.ion-minus{
+    padding:0px 10px;
+}
+
+#blog{
+	background-color:#f6f6f6;
+}
+
+#blog .carousel-indicators {
+    bottom: -60px;
+}
+
+#blog .carousel-indicators li{
+    background-color: #5db4c0;
+    height: 13px;
+    width: 13px;
+    margin: 5px;
+}
+
+#blog .carousel-indicators li.active{
+    background-color: #888383;
+}
+
+#blog .card-block{
+    padding: 10px;
+}
+
+#blog .card{
+    background-color: #FFF;
+    border: 1px solid #eceaea;
+    margin: 20px 0px;
+}
+
+.btn.btn-default {
+    background-color: #5db4c0;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
 
 
-<div class="post-container">
-  <!--     <a href="/../members/by=position/position=phd/"> -->
-  <img src="/assets/img/member/research/color-cosmos.jpg">
-  <h3 class="post-title"><a href="/../posts/2019-06-01-the-obstech-chronicle/">The Obstech Chronicle</a></h3>
+</style>
 
-  <p class="post-short">
-    It began when I started thinking about transforming the lab, where I was working back then,
-    into the successful business that would allow me to retire before my 30s. At the time, I was
-    working on my MSc Thesis and working on the FIDEOS project (Tala+2014). In the lab next to
-    the optics lab, my colleague Samuel Ropert was working on the electronics for the same instrument.
-    It was in one of those talks (the ones full of non-working-instrument frustration), when we
-    came up with the idea of starting our own company. It was our time to bring the astronomy
-    technology to the Chilean industry. We saw it all, on the front page of the newspapers it would
-    be written, “Young Chilean entrepreneurs re-define the destiny of the industry of astronomy with
-    their innovative creations”. And with this would come a good life with no worries, drinking pisco
-    sour in my own observatory, in the heart of the Chilean Andes, staring at the sunset inside a warm jacuzzi.
-  </p>
 
-  <p class="post-author"><a href="/../members/People/pinto/">Marcelo Tala Pinto</a></p>
-</div>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<div class="post-container">
-  <!--     <a href="/../members/by=position/position=phd/"> -->
-  <img src="/assets/img/member/research/color-cosmos.jpg">
-  <h3 class="post-title"><a href="/../posts/2019-06-01-the-obstech-chronicle/">The Obstech Chronicle</a></h3>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 
-  <p class="post-short">
-    It began when I started thinking about transforming the lab, where I was working back...
-  </p>
+<!--
+    instagram: www.instagram.com/programmingtutorial
+    site: programlamadersleri.net
+-->
 
-  <p class="post-author"><a href="/../members/People/pinto/">Marcelo Tala Pinto</a></p>
-</div>
+<section id="blog">
+   <div class="container">
+           
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 text-center">  
+                <h2>
+                    <span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span>
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
+            </div> 
+         </div>  
+                
+        <div class="row">
+             
+			 <div id="slider" class="carousel slide" data-ride="carousel">
+                        
+                     <ol class="carousel-indicators">
+                         <li data-target="#slider" data-slide-to="0" class="active"></li>
+                         <li data-target="#slider" data-slide-to="1"></li>
+                     </ol>
+                            
+                      
+             <!-- Carousel items -->
+             <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+					
+                	  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					 
+                	</div> <!-- row -->
+                </div> <!-- item -->
+                 
+                <div class="item">
+                	<div class="row">
+                		
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">Post Title</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+						
+                	</div> <!-- row -->
+                </div> <!-- item -->
+                 
+                 
+				</div>
+			</div>
+		</div>
+			
+	</div>
+</section>
