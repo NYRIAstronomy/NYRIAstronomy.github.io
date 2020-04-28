@@ -377,26 +377,20 @@ html, body {
   height: 140;
 }
 .table-entry {
-/*font-family:verdana; */
-/*font-size: 12px;*/
-text-align:left;
-font-color:black;
-/*font-weight: bold;*/
-text-decoration: none;
+  text-align:left;
+  font-color:black;
+  text-decoration: none;
 }
 .table-entry img {
-height: 180;
-border: 2px solid #bbb;
-border-radius: 15px;
-object-fit: cover;
+  height: 180;
+  border: 2px solid #bbb;
+  border-radius: 15px;
+  object-fit: cover;
 }
 .table-font-description {
-/*font-family:verdana; */
-/*font-size: 12px;*/
-text-align:left;
-font-color:black;
-/*font-weight: bold;*/
-text-decoration: none;
+  text-align:left;
+  font-color:black;
+  text-decoration: none;
 }
 
 .banner-image {
@@ -411,11 +405,11 @@ text-decoration: none;
 /* members*/
 .member-profile-img {
   float: left;
-  width: 30%;
+  width: 25%;
   padding: 20px;
 }
 .member-profile-img img {
-  height: 320;
+  width: 100%;
   border: 2px solid #bbb;
   border-radius: 15px;
   object-fit: cover;
@@ -423,7 +417,7 @@ text-decoration: none;
 .member-profile-text {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 75%;
 }
 
 
