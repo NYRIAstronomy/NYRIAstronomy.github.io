@@ -56,46 +56,44 @@
     </header>
 
     <main id="content" role="main">
-      <!--div class="site-main-content-wrapper"-->
-        <!--Read search parameters from link-->
-        {% assign criterion = page.permalink | split: "/" | last | split: "=" | first %}
 
-        <!--Define headline according to search criterion-->
-        {% if criterion == "country" %}
-          {% assign value = page.item_value %}
-          <h1>Members In {{ value }}</h1>
-        {% elsif criterion == "research" %}
-           {% assign value = page.keyword %}
-          <h1>Members Working On {{ value }}</h1>
-        {% elsif criterion == "affiliation" %}
-          {% assign value = page.item_value %}
-          <h1>Members At {{ value }}</h1>
-        {% elsif criterion == "position" %}
-          {% assign value = page.item_value %}
-          <h1>Members At {{ value }}</h1>
-        {% endif %}
+      <!--Read search parameters from link-->
+      {% assign criterion = page.permalink | split: "/" | last | split: "=" | first %}
 
-        <!--Define subset of members according to search criterion-->
-        {% assign member_subset = site.members | where: criterion, value %}
+      <!--Define headline according to search criterion-->
+      {% if criterion == "country" %}
+        {% assign value = page.item_value %}
+        <h1>Members In {{ value }}</h1>
+      {% elsif criterion == "research" %}
+         {% assign value = page.keyword %}
+        <h1>Members Working On {{ value }}</h1>
+      {% elsif criterion == "affiliation" %}
+        {% assign value = page.item_value %}
+        <h1>Members At {{ value }}</h1>
+      {% elsif criterion == "position" %}
+        {% assign value = page.item_value %}
+        <h1>Members At {{ value }}</h1>
+      {% endif %}
 
-        <!--Create table elements by looping over members-->
-        <table class="table">
-          {% for member in member_subset %}
-            <tr>
-              <td class="table-entry">
-                <a href="{{ member.url }}">
-                  <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="180" align="left" hspace="20"> </p>
-                  <p><b>Affiliation:</b> {{ member.affiliation }} </p>
-                  <p><b>Research:</b> {{ member.title }} </p>
-                  <p><b>Keywords:</b> {{ member.keywords }} </p>
-                  <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
-                </a>
-              </td>
-            </tr>
-          {% endfor %}
-        </table>
+      <!--Define subset of members according to search criterion-->
+      {% assign member_subset = site.members | where: criterion, value %}
 
-      <!--/div-->
+      <!--Create table elements by looping over members-->
+      <table class="table">
+        {% for member in member_subset %}
+          <tr>
+            <td class="table-entry">
+              <a href="{{ member.url }}">
+                <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="180" align="left" hspace="20"> </p>
+                <p><b>Affiliation:</b> {{ member.affiliation }} </p>
+                <p><b>Research:</b> {{ member.title }} </p>
+                <p><b>Keywords:</b> {{ member.keywords }} </p>
+                <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
+              </a>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
     </main>
 
     <footer>
