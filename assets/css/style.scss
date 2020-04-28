@@ -178,6 +178,8 @@ footer {
   height: inherit;
   width: 25%;
   text-align: left;
+
+  background-color: blue;
 }
 .footer-navigation{
   position: relative;
@@ -186,6 +188,8 @@ footer {
   height: inherit;
   width: 45%;
   text-align: right;
+
+  background-color: red;
 }
 .footer-navigation ul {
   float: right;
