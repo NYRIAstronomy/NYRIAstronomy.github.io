@@ -430,6 +430,12 @@ footer {
   padding: 20px;
   width: 75%;
 }
+@media (max-width: 600px) {
+  .member-profile-image-column, .member-profile-text-column {
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 /* posts */
