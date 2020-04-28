@@ -58,9 +58,6 @@
 
     <main id="content" role="main">
 
-      <h1>{{ page.name }}</h1>
-      <p style="text-align:center;"> {{ page.keywords }} </p>
-
       <div class="member-profile-image-column">
         <img  src="{{page.image_path}}" alt=" ">
 
@@ -80,8 +77,10 @@
       <div class="member-profile-text-column">
 
         <!--p><b>Keywords:</b> {{ page.keywords }} </p-->
+        <h1>{{ page.name }}</h1>
+        <p style="text-align:center;"> {{ page.keywords }} </p>
 
-        <h2> {{ page.title }}</h2>
+        <h3> {{ page.title }}</h3>
 
         {{ content }}
 
