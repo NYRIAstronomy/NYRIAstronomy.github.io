@@ -174,18 +174,17 @@ footer {
 
 .footer-credits {
   position: relative;
-  left: 0;
+  float: left;
   height: inherit;
-  width: 50%;
-  margin-right: 60%;
+  width: 25%;
   text-align: left;
 }
 .footer-navigation{
   position: relative;
   top: 0;
-  right: 0;
+  float: left;
   height: inherit;
-  width: 50%;
+  width: 45%;
   text-align: right;
 }
 .footer-navigation ul {
