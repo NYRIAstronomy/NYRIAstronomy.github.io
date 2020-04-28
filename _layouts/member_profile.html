@@ -59,12 +59,13 @@
     <main id="content" role="main">
 
       <h1>{{ page.name }}</h1>
+      <p>{{ page.affiliation }} ({{ page.country }})</p>
+      <p>{{ page.jointaffiliation }}</p>
+      <p style="text-align:center;"> {{ page.keywords }} </p>
 
       <div class="member-profile-image-column">
         <img  src="{{page.image_path}}" alt=" ">
-        <p><b>Affiliation:</b> {{ page.affiliation }}</p>
-        <p><b>Joint Affiliation:</b> {{ page.jointaffiliation }}</p>
-        <p><b>Country:</b> {{ page.country }}</p>
+
         <p><b>Position:</b> {{ page.position }}</p>
         <p><b>Contact:</b> {{ page.email }} </p>
         <p></p>
@@ -87,7 +88,7 @@
 
         <p><b>Prior Research:</b> </p>
         {{ page.prior}}</p> -->
-        
+
       </div>
     </main>
 
