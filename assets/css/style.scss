@@ -439,19 +439,20 @@ footer {
 }
 
 /* members*/
-.member-profile-img {
+.member-profile-image-column {
   float: left;
   width: 25%;
   padding: 20px;
   background-color: #dddddd;
+  border-radius: 15px;
 }
-.member-profile-img img {
+.member-profile-image-column img {
   width: 100%;
   border: 2px solid #bbb;
   border-radius: 15px;
   object-fit: cover;
 }
-.member-profile-text {
+.member-profile-text-column {
   float: left;
   padding: 20px;
   width: 75%;
