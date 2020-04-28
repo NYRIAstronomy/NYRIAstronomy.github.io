@@ -63,15 +63,22 @@
 
         <div class="member-profile-img">
           <img  src="{{page.image_path}}" alt=" ">
-          <!-- height="320" align="right" vspace="20" hspace="20"-->
-        </div>
-
-        <div class="member=profile-text">
-
           <p><b>Affiliation:</b> {{ page.affiliation }}</p>
           <p><b>Joint Affiliation:</b> {{ page.jointaffiliation }}</p>
           <p><b>Country:</b> {{ page.country }}</p>
           <p><b>Position:</b> {{ page.position }}</p>
+          <p><b>Contact:</b> {{ page.email }} </p>
+          <p></p>
+          <p><b>Website:</b>  {{ page.website }} </p>
+          <p><b>ORCID:</b> {{ page.orcid }} </p>
+          <p><b>LINKEDIN:</b> {{ page.linkedin }} </p>
+          <p><b>Research gate:</b> {{ page.rgate }} </p>
+        </div>
+
+        <div class="member=profile-text">
+
+          <p><b>Keywords:</b> {{ page.keywords }} </p>
+
           <p><b>Current Research Subject Title:</b> {{ page.title }}</p>
 
           {{ content }}
@@ -82,12 +89,9 @@
           <p><b>Prior Research:</b> </p>
           {{ page.prior}}</p> -->
 
-          <p><b>ORCID:</b> {{ page.orcid }} </p>
-          <p><b>Personal Website:</b>  {{ page.website }} </p>
-          <p><b>LINKEDIN:</b> {{ page.linkedin }} </p>
-          <p><b>Research gate:</b> {{ page.rgate }} </p>
-          <p><b>Keywords:</b> {{ page.keywords }} </p>
-          <p><b>Contact:</b> {{ page.email }} </p>
+
+
+
         </div>
       </div>
     </main>
