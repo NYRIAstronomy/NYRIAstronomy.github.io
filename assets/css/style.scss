@@ -176,14 +176,13 @@ footer {
   position: relative;
   float: left;
   height: inherit;
-  width: 25%;
+  width: 20%;
   text-align: left;
 
   background-color: blue;
 }
 .footer-navigation{
-  position: relative;
-  top: 0;
+  position: absolute;
   float: left;
   height: inherit;
   width: 45%;
