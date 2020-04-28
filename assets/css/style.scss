@@ -94,7 +94,13 @@ html, body {
 }
 
 
-/* ---------- general design: body ---------- */
+/* ---------- general design: main ---------- */
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .site-main {
   z-index: 0;
   width: 100%;
