@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+* {
+  box-sizing: border-box;
+}
+
 
 /* ---------- general design: body ---------- */
 html, body {
@@ -11,7 +15,7 @@ html, body {
 
 
 /* ---------- general design: header ---------- */
-.site-header {
+header {
   z-index: 10;
   top: 0;
   left: 0;
@@ -31,13 +35,13 @@ html, body {
 
   opacity: 1.0;
 }
-.site-header h1 h2 {
+header h1 h2 {
   position: relative;
   left: 110px;
   margin-left: 10px;
 }
 
-.site-header a {
+header a {
   color: #BF360C;
   text-decoration: none;
   line-height: 25px;
