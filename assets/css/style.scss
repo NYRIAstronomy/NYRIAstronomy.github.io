@@ -106,14 +106,39 @@ main {
   position: relative;
   margin-top: 110px;
   margin-bottom: 10px;
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  width: 100%;
+  //min-height: 80%;
+
+  padding: 25px;
+  text-align: justify;
+  box-shadow: 0px 0px 8px gray;
+}
+main h1 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+main h2 {
+  padding-top: 250px;
+  padding-bottom: 10px;
+}
+main h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+main h4 {
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 @media (max-width: 600px) {
   main {
     height: auto;
-    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -123,6 +148,7 @@ main:after {
   clear: both;
 }
 
+/*
 .site-main {
   z-index: 0;
   width: 100%;
@@ -141,7 +167,8 @@ main:after {
     padding: 0;
   }
 }
-
+*/
+/*
 .site-main-content-wrapper {
   width: 100%;
   //min-height: 80%;
@@ -167,7 +194,7 @@ main:after {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-
+*/
 
 
 /* ---------- general design: footer ---------- */
