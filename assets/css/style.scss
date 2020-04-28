@@ -112,6 +112,14 @@ main:after {
   padding-right: 15%;
 }
 
+@media (max-width: 600px) {
+  .site-main {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+}
+
 .site-main-content-wrapper {
   width: 100%;
   //min-height: 80%;
