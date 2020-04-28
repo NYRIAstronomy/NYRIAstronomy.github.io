@@ -6,21 +6,16 @@ permalink: /members/
 
 <h1>Members</h1>
 <p>
-  NYRIA is a network of young astronomers from all around the world, working in different areas of astronomical instrumention.
-  Here you can find members as according to their country, research areas and more.
-  The map illustrates the current reach of NYRIA.
-  To search for individual members by country, research area and institute please click on the desired link.
+  NYRIA is a network of young astronomers from all around the world, working in different areas of astronomical
+  instrumention. Here you can find members as according to their country, research areas and more. The map illustrates
+  the current reach of NYRIA. To search for individual members by country, research area and institute please click on
+  the desired link.
 </p>
-
-<!-- <iframe title="World Map of Members " aria-label="World choropleth map" id="datawrapper-chart-65wrw" src="//datawrapper.dwcdn.net/65wrw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var t in a.data["datawrapper-height"]){var e=document.getElementById("datawrapper-chart-"+t);e&&(e.style.height=a.data["datawrapper-height"][t]+"px")}})}();</script> -->
-<!-- <iframe title="World Map of Members " aria-label="World choropleth map" id="datawrapper-chart-65wrw" src="//datawrapper.dwcdn.net/65wrw/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script> -->
-<!-- <iframe title="World Map of Members " aria-label="World choropleth map" id="datawrapper-chart-65wrw" src="//datawrapper.dwcdn.net/65wrw/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script> -->
-<!-- <iframe title="World Map of Members " aria-label="World choropleth map" id="datawrapper-chart-65wrw" src="//datawrapper.dwcdn.net/65wrw/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script> -->
 
 
 <iframe title="World Map of Members" aria-label="World choropleth map" id="datawrapper-chart-0ZLOT" src="//datawrapper.dwcdn.net/0ZLOT/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
 
-<h3>List members by ...</h3>
+<h3>Filter members by ...</h3>
 <div class="flexible-matrix">
   <div class="link-icon-container">
     <a href="/../members/by=country/">
@@ -49,8 +44,32 @@ permalink: /members/
       <div class="link-box-text">Position</div>
     </a>
   </div>
-
 </div>
+
+<h3>All members</h3>
+
+<table class="table">
+
+  {% for member in site.members %}
+    <tr>
+      <!-- <td class="table-image"> <a href="{{ member.url }}"><img src="{{ member.image_path }}" height="140"></a></td> -->
+      <td class="table-content">
+        <div class="entry">
+          <a href="{{ member.url }}">
+            <div class="font-description">
+              <!--font color="black"-->
+              <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="180" align="left" hspace="20"> </p>
+              <p><b>Affiliation:</b> {{ member.affiliation }} </p>
+              <p><b>Research:</b> {{ member.title }} </p>
+              <p><b>Keywords:</b> {{ member.keywords }} </p>
+              <p><b>Contact:</b> </font> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
+            </div>
+          </a>
+        </div>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
 
 
 
