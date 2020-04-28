@@ -17,9 +17,9 @@ html, body {
 /* ---------- general design: header ---------- */
 header {
   z-index: 10;
-  top: 0;
-  left: 0;
-  height: 100px;
+  //top: 0;
+  //left: 0;
+  //height: 100px;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -100,10 +100,10 @@ header a {
 
 /* ---------- general design: main ---------- */
 main {
-  z-index: 0;
+  //z-index: 0;
   width: 70%;
 
-  position: relative;
+  //position: relative;
   margin-top: 110px;
   margin-bottom: 10px;
   margin-left: 15%;
@@ -175,21 +175,16 @@ footer {
 .footer-credits {
   //position: relative;
   float: left;
-  height: inherit;
+  //height: inherit;
   width: 20%;
   text-align: left;
-
-  color: yellow;
-  background-color: blue;
 }
 .footer-navigation{
   //position: absolute;
   float: left;
-  height: inherit;
+  //height: inherit;
   width: 45%;
   text-align: right;
-
-  background-color: red;
 }
 .footer-navigation ul {
   float: right;
