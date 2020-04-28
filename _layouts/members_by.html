@@ -75,48 +75,26 @@
           <h1>Members At {{ value }}</h1>
         {% endif %}
 
-        <!--style>
-          .entry {
-          }
-          .entry img {
-            height: 180;
-            border: 2px solid #bbb;
-            border-radius: 15px;
-            object-fit: cover;
-          }
-          .font-description {
-            /*font-family:verdana; */
-            /*font-size: 12px;*/
-            text-align:left;
-            font-color:black;
-            /*font-weight: bold;*/
-            text-decoration: none;
-          }
-	    </style-->
-
         <!--Define subset of members according to search criterion-->
         {% assign member_subset = site.members | where: criterion, value %}
 
+        <!--Create table elements by looping over members-->
         <table class="table">
-
           {% for member in member_subset %}
             <tr>
               <td class="table-entry">
-                <!--div class="entry"-->
-                  <a href="{{ member.url }}">
-                    <!--div class="font-description"-->
-                      <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="180" align="left" hspace="20"> </p>
-                      <p><b>Affiliation:</b> {{ member.affiliation }} </p>
-                      <p><b>Research:</b> {{ member.title }} </p>
-                      <p><b>Keywords:</b> {{ member.keywords }} </p>
-                      <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
-                    <!--/div-->
-                  </a>
-                <!--/div-->
+                <a href="{{ member.url }}">
+                  <p><b>Name:</b> {{ member.name }}  <img src="{{member.image_path}}" alt=" " height="180" align="left" hspace="20"> </p>
+                  <p><b>Affiliation:</b> {{ member.affiliation }} </p>
+                  <p><b>Research:</b> {{ member.title }} </p>
+                  <p><b>Keywords:</b> {{ member.keywords }} </p>
+                  <p><b>Contact:</b> <a href="mailto:{{ member.email}}">{{ member.email }}</a> </p>
+                </a>
               </td>
             </tr>
           {% endfor %}
         </table>
+        
       </div>
     </main>
 
