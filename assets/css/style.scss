@@ -408,6 +408,24 @@ text-decoration: none;
   width: 100%;
 }
 
+/* members*/
+.member-profile-img {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+.member-profile-img img {
+  height: 240;
+  border: 2px solid #bbb;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.member-profile-text {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
 
 /* posts */
 .post-container {
