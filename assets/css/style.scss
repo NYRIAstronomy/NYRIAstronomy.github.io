@@ -172,7 +172,7 @@ main:after {
 
 /* ---------- general design: footer ---------- */
 
-.site-footer {
+footer {
   position: relative;
   z-index: 0;
   bottom: 0;
@@ -183,7 +183,7 @@ main:after {
   background-color: #3D3C3A;
 }
 
-.site-footer-content-wrapper {
+.footer-content-wrapper {
   z-index: 0;
   position: relative;
   bottom: 0;
@@ -192,7 +192,7 @@ main:after {
 
   opacity: 1.0;
 }
-.site-footer-credits {
+.footer-credits {
   position: relative;
   left: 0;
   height: 60px;
@@ -203,7 +203,7 @@ main:after {
   background-color: transparent;
 }
 
-.site-footer-navigation{
+.footer-navigation{
   position: absolute;
   top: 0;
   right: 0;
@@ -214,19 +214,19 @@ main:after {
 
   background-color: transparent;
 }
-.site-footer-navigation ul {
+.footer-navigation ul {
   float: right;
   display: inline;
 }
-.site-footer-navigation li {
+.footer-navigation li {
   display: inline;
 }
-.site-footer-navigation a {
+.footer-navigation a {
   text-decoration: none;
   color: white;
   border: 5px solid transparent;
 }
-.site-footer-navigation a:hover {
+.footer-navigation a:hover {
   color: #BF360C;
 }
 
