@@ -22,30 +22,6 @@ permalink: /workshops/
   transition: .5s ease;
 }
 </style>
-<!--
-.link-icon-container .text-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  min-width: 2cm;
-  font-weight: bold;
-  background-color: red;
-  border: 10px solid red;
-  border-radius: 10px;
-}
-.link-icon-container a {
-  color: white;
-  text-decoration: none;
-}
-.link-icon-container:hover {
-  opacity: 1.0;
-  transform: scale(1.1);
-}
-
-</style>
--->
 
 
 <h1>Workshops</h1>
@@ -83,28 +59,3 @@ permalink: /workshops/
       </div>
   {% endfor %}
 </div>
-
-
-<!-- <div class="flexible-matrix">
-  {% for workshop in site.workshops reversed %}
-    {% if forloop.first %}
-      {% continue %}
-    {% endif %}
-      <div class="link-icon-container">
-        <a href="{{ workshop.url }}">
-          <img src="{{ workshop.image }}" alt="">
-        </a>
-        <a href="{{ workshop.url }}">
-          <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
-        </a>
-      </div>
-  {% endfor %}
-</div> -->
-
-
-<!--   <div class="link-icon-container">
-    <a href="/../members/by=research/">
-      <img src="/assets/img/icons/research.jpg" alt="">
-      <div class="link-box-text">Research</div>
-    </a>
-  </div> -->
