@@ -99,6 +99,24 @@ header a {
 
 
 /* ---------- general design: main ---------- */
+main {
+  z-index: 0;
+  width: 100%;
+
+  position: relative;
+  margin-top: 110px;
+  margin-bottom: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media (max-width: 600px) {
+  main {
+    height: auto;
+    padding: 0;
+  }
+}
+
 main:after {
   content: "";
   display: table;
