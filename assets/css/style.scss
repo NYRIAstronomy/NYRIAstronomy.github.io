@@ -155,43 +155,28 @@ footer {
   bottom: 0;
   height: 60px;
   width: 100%;
+  padding-top: 15px;
   padding-left: 15%;
   padding-right: 15%;
   background-color: #3D3C3A;
 
   color: white;
 }
-
-.footer-content-wrapper {
-  z-index: 0;
-  position: relative;
-  bottom: 0;
-  background-color: inherit;
-  color: white;
-
-  opacity: 1.0;
-}
 .footer-credits {
   position: relative;
   left: 0;
-  height: 60px;
-  width: 100%;
+  height: inherit;
+  width: 50%;
   margin-right: 60%;
-  padding-top: 15px;
   text-align: left;
-  background-color: transparent;
 }
-
 .footer-navigation{
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
-  height: 60px;
-  width: 60%;
+  height: inherit;
+  width: 50%;
   text-align: right;
-  padding-top: 15px;
-
-  background-color: transparent;
 }
 .footer-navigation ul {
   float: right;
