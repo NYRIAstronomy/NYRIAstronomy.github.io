@@ -65,9 +65,9 @@ header:after {
 }
 
 .header-logo {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
   //position: relative;
   height: 100px;
   //width: 50%;
@@ -77,9 +77,9 @@ header:after {
   background-color: blue;
 }
 .header-text {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  -webkit-flex-grow: 4;
+  -ms-flex-grow: 4;
+  flex-grow: 4;
   //position: absolute;
   //top: 0;
   //left: 90px;
@@ -90,9 +90,9 @@ header:after {
   background-color: green;
 }
 .header-nav{
-  -webkit-flex: 5;
-  -ms-flex: 5;
-  flex: 5;
+  -webkit-flex-grow: 5;
+  -ms-flex-grow: 5;
+  flex-grow: 5;
   background-color: red;
   //position: absolute;
   //padding-right: 10%;
