@@ -76,10 +76,11 @@ header:after {
   //top: 0;
   //left: 90px;
   //width: 100%;
-  font-size: 1.5em;
+  font-size: 48px;
   //font-weight: bold;
   //display: block;
   background-color: green;
+  vertical-align: middle;
 }
 .header-nav{
   -webkit-flex: 5;
@@ -91,6 +92,7 @@ header:after {
   //right: 0;
   //z-index: -1;
   //bottom: 10px;
+  vertical-align: middle;
 }
 .header-nav ul {
   float: right;
