@@ -43,18 +43,21 @@ header h1 h2 {
   left: 110px;
   margin-left: 10px;
 }
-/*
+
 header a {
   color: #BF360C;
   text-decoration: none;
-  line-height: 25px;
+}
+header a:hover {
+  color: #BF360C;
+  text-decoration: none;
 }
 
 header:after {
   content: "";
   display: table;
   clear: both;
-}*/
+}
 
 .header-logo {
   -webkit-flex: 1;
@@ -79,7 +82,7 @@ header:after {
   //font-weight: bold;
   //display: block;
   //vertical-align: middle;
-}
+}/*
 .header-text a {
   color: #BF360C;
   text-decoration: none;
@@ -87,7 +90,7 @@ header:after {
 .header-text a:hover {
   color: #BF360C;
   text-decoration: none;
-}
+}*/
 .header-nav{
   -webkit-flex: 5;
   -ms-flex: 5;
