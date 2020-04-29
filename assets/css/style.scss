@@ -34,9 +34,9 @@ header {
 
   background-color: #3D3C3A;
   font-size: 14pt;
-  color: red;
+  //color: red;
 
-  opacity: 1.0;
+  //opacity: 1.0;
 }
 header h1 h2 {
   position: relative;
@@ -128,7 +128,8 @@ main {
   width: 70%;
 
   position: relative;
-  margin-top: 110px;
+  //margin-top: 110px; // only with fixed header
+  margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 15%;
   margin-right: 15%;
