@@ -63,55 +63,55 @@ header:after {
   }
 }
 
-.site-header-logo {
+.header-logo {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   //position: relative;
-  //height: 100%;
+  height: 100px;
   //width: 50%;
   //left: 0;
   //float: left;
   display: inline;
   background-color: transparent;
 }
-.site-header-logo img {
-  height: 100%;
-}
-.site-header-logo-text {
-  position: absolute;
-  top: 0;
-  left: 90px;
-  //width: 100%;
-  font-size: 1.5em;
-  font-weight: bold;
-  display: block;
-}
-
-.site-header-navigation{
+.header-text {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  //position: absolute;
+  //top: 0;
+  //left: 90px;
+  //width: 100%;
+  //font-size: 1.5em;
+  //font-weight: bold;
+  display: block;
+}
+.header-nav{
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+  background-color: red;
   //position: absolute;
   //padding-right: 10%;
   //right: 0;
   //z-index: -1;
   //bottom: 10px;
 }
-.site-header-navigation ul {
+.header-nav ul {
   float: right;
   display: inline;
 }
-.site-header-navigation li {
+.header-nav li {
   display: inline;
 }
-.site-header-navigation a {
+.header-nav a {
   color: white;
   text-decoration: none;
   border: 5px solid #3D3C3A;
   margin: inherit;
 }
-.site-header-navigation a:hover {
+.header-nav a:hover {
   background-color: #BF360C;
   color: white;
   border: 5px solid #BF360C;
