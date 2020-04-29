@@ -16,6 +16,8 @@ html, body {
 
 /* ---------- general design: header ---------- */
 header {
+  display: -webkit-flex;
+  display: flex;
   z-index: 10;
   top: 0;
   left: 0;
@@ -48,6 +50,9 @@ header a {
 }
 
 .site-header-logo {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   position: relative;
   height: 100%;
   width: 50%;
@@ -70,6 +75,9 @@ header a {
 }
 
 .site-header-navigation{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   position: absolute;
   padding-right: 10%;
   right: 0;
