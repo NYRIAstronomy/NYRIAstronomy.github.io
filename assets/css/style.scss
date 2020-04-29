@@ -55,14 +55,6 @@ header:after {
   display: table;
   clear: both;
 }
-@media (max-width: 600px) {
-  header {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
 
 .header-logo {
   -webkit-flex: 1;
@@ -119,6 +111,25 @@ header:after {
   border: 5px solid #BF360C;
   border-radius: 5px;
   margin: inherit;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .header-logo {
+    text-align: center;
+  }
+  .header-text {
+    text-align: center;
+  }
+  .header-nav {
+    text-align: center;
+  }
 }
 
 
@@ -189,16 +200,6 @@ footer {
 
   color: white;
 }
-@media (max-width: 600px) {
-  footer {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
 
 .footer-credits {
   -webkit-flex: 1;
@@ -236,6 +237,22 @@ footer {
   color: #BF360C;
 }
 
+@media (max-width: 600px) {
+  footer {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .footer-credits {
+    text-align: center;
+  }
+  .footer-navigation {
+    text-align: center;
+  }
+}
 
 
 /* ---------- particular design classes ---------- */
