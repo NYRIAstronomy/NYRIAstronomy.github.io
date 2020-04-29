@@ -49,6 +49,18 @@ header a {
   line-height: 25px;
 }
 
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  header {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 .site-header-logo {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -138,9 +150,10 @@ main h4 {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-
 @media (max-width: 600px) {
   main {
+    -webkit-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin-left: 0;
@@ -173,6 +186,8 @@ footer {
 }
 @media (max-width: 600px) {
   footer {
+    -webkit-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     height: auto;
     padding-left: 0;
