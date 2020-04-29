@@ -18,7 +18,7 @@ html, body {
 header {
   display: -webkit-flex;
   display: flex;
-  z-index: 10;
+  //z-index: 10;
   //top: 0;
   //left: 0;
   //height: 100px;
@@ -27,8 +27,8 @@ header {
   padding-bottom: 10px;
   padding-left: 10%;
   padding-right: 10%;
-  position: fixed;
-  float: left;
+  //position: fixed;
+  //float: left;
   display: inline;
 
   background-color: #3D3C3A;
