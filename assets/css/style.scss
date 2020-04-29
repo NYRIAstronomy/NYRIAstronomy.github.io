@@ -157,8 +157,6 @@ footer {
   bottom: 0;
   height: 60px;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 15%;
   padding-right: 15%;
   background-color: #3D3C3A;
@@ -180,8 +178,6 @@ footer {
   flex: 1;
   //position: relative;
   float: left;
-  //height: inherit;
-  //width: 20%;
   text-align: left;
   background-color: green;
 }
@@ -189,10 +185,7 @@ footer {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  //position: absolute;
   float: left;
-  //height: inherit;
-  //width: 45%;
   text-align: right;
   background-color: red;
 }
@@ -202,6 +195,8 @@ footer {
 }
 .footer-navigation li {
   display: inline;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .footer-navigation a {
   text-decoration: none;
