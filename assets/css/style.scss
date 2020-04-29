@@ -105,9 +105,11 @@ header:after {
   margin: inherit;
 }
 .header-nav a:hover {
+  text-decoration: none;
   background-color: #BF360C;
   color: white;
-  border: 5px solid #BF360C;
+  //border: 5px solid #BF360C;
+  padding: 5px;
   border-radius: 5px;
   margin: inherit;
 }
