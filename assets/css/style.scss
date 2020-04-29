@@ -75,12 +75,17 @@ header:after {
   //top: 0;
   //left: 90px;
   //width: 100%;
-  font-size: 32pt;
+  font-size: 28pt;
   //font-weight: bold;
   //display: block;
-  vertical-align: middle;
+  //vertical-align: middle;
 }
 .header-text a {
+  color: #BF360C;
+  text-decoration: none;
+}
+.header-text a:hover {
+  color: #BF360C;
   text-decoration: none;
 }
 .header-nav{
