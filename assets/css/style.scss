@@ -66,7 +66,6 @@ header:after {
   //left: 0;
   //float: left;
   //display: inline;
-  background-color: blue;
 }
 .header-text {
   -webkit-flex: 4;
@@ -76,17 +75,15 @@ header:after {
   //top: 0;
   //left: 90px;
   //width: 100%;
-  font-size: 48px;
+  font-size: 32pt;
   //font-weight: bold;
   //display: block;
-  background-color: green;
   vertical-align: middle;
 }
 .header-nav{
   -webkit-flex: 5;
   -ms-flex: 5;
   flex: 5;
-  background-color: red;
   //position: absolute;
   //padding-right: 10%;
   //right: 0;
