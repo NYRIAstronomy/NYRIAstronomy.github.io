@@ -80,6 +80,9 @@ header:after {
   //display: block;
   vertical-align: middle;
 }
+.header-text a {
+  text-decoration: none;
+}
 .header-nav{
   -webkit-flex: 5;
   -ms-flex: 5;
