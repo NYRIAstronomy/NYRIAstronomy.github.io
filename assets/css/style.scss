@@ -17,8 +17,8 @@ html, body {
 /* ---------- general design: header ---------- */
 header {
   z-index: 10;
-  //top: 0;
-  //left: 0;
+  top: 0;
+  left: 0;
   height: 100px;
   width: 100%;
   padding-top: 10px;
@@ -150,9 +150,9 @@ main:after {
 /* ---------- general design: footer ---------- */
 
 footer {
-  //position: relative;
+  position: relative;
   //z-index: 0;
-  //bottom: 0;
+  bottom: 0;
   height: 60px;
   width: 100%;
   padding-top: 15px;
