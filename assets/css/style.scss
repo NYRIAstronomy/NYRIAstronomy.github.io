@@ -19,9 +19,9 @@ header {
   display: -webkit-flex;
   display: flex;
   z-index: 10;
-  top: 0;
-  left: 0;
-  height: 100px;
+  //top: 0;
+  //left: 0;
+  //height: 100px;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -67,11 +67,11 @@ header:after {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  position: relative;
-  height: 100%;
-  width: 50%;
-  left: 0;
-  float: left;
+  //position: relative;
+  //height: 100%;
+  //width: 50%;
+  //left: 0;
+  //float: left;
   display: inline;
   background-color: transparent;
 }
@@ -82,7 +82,7 @@ header:after {
   position: absolute;
   top: 0;
   left: 90px;
-  width: 100%;
+  //width: 100%;
   font-size: 1.5em;
   font-weight: bold;
   display: block;
@@ -92,11 +92,11 @@ header:after {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  position: absolute;
-  padding-right: 10%;
-  right: 0;
-  z-index: -1;
-  bottom: 10px;
+  //position: absolute;
+  //padding-right: 10%;
+  //right: 0;
+  //z-index: -1;
+  //bottom: 10px;
 }
 .site-header-navigation ul {
   float: right;
