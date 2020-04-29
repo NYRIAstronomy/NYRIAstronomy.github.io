@@ -104,8 +104,9 @@ header:after {
 .header-nav a {
   color: white;
   text-decoration: none;
-  border: 5px solid transparent;
-  margin: inherit;
+  //border: 5px solid transparent;
+  padding: 5px;
+  //margin: inherit;
 }
 .header-nav a:hover {
   text-decoration: none;
@@ -114,7 +115,7 @@ header:after {
   //border: 5px solid #BF360C;
   padding: 5px;
   border-radius: 5px;
-  margin: inherit;
+  //margin: inherit;
 }
 
 
