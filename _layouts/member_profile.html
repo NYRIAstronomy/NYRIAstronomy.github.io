@@ -56,8 +56,6 @@
         <main id="content" role="main">
 
       <div class="member-profile-image-column">
-<!--         <p style="font-size:30px;text-align:center;">{{ page.name }}</p>
-        <p style="text-align:center;">{{ page.position}}</p> -->
 
         <img  src="{{page.image_path}}" alt=" ">
 
@@ -82,15 +80,15 @@
        <p style="text-align:left;  LINE-HEIGHT:0.7px " >{{ page.position }}</p>
         
         <h3>Research Interests</h3>
-        <p style="text-align:left"><b>{{ page.title }}</b></p>        
-        <p style="text-align:left">{{ page.keywords }}</p>
-        {{ content }}
+        <p style="text-align:left"><b>{{ page.title }} </b></p>        
+<!--         <p style="text-align:left">{{ page.keywords }} </p> -->
+<!--         {{ content }} -->
 
-        <!-- <p><b>Current Research Summary:</b> </p>
+        <p style="text-align:left"><b>Current Research Summary: {{ page.title }}</b> </p>
         {{ page.summary}}</p>
 
-        <p><b>Prior Research:</b> </p>
-        {{ page.prior}}</p> -->
+        <p style="text-align:left"><b>Prior Research:</b> </p>
+        {{ page.prior}}</p>
 
       </div>
     </main>
