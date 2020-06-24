@@ -505,6 +505,12 @@ footer {
   text-align: left;
 }
 
+.member-profile-text-column h2{
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
 @media (max-width: 600px) {
   .member-profile-image-column, .member-profile-text-column {
     width: 100%;
