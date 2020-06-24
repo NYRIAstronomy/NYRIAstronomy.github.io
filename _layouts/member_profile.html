@@ -61,16 +61,17 @@
 
         <img  src="{{page.image_path}}" alt=" ">
 
-        <p>{{ page.affiliation }}</p>
-        <p>{{ page.jointaffiliation }}</p>
-        <p>{{ page.country }}</p>
+        <p style="text-align:left;">{{ page.affiliation }}<br>
+        {{ page.jointaffiliation }}<br>
+        {{ page.country }}</p>
         <p></p>
-        <p><b>Contact:</b><br>{{ page.email }}</p>
-        <p></p>
+        <p style="text-align:left;"><b>Contact:</b><br>
+          <a href= {{ page.email }}>Email</a></p>
+        <pstyle="text-align:left;"><b>More Links:</b><br>
         <a href="page.website">Personal Website</a> <br>
         <a href="page.orcid">ORCID</a><br>
         <a href="page.rgate">Research Gate</a>  <br>      
-        <a href="page.linkedin">LINKEDIN</a>       
+        <a href="page.linkedin">LINKEDIN</a>   </p>    
 
       </div>
 
