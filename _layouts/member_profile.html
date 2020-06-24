@@ -57,12 +57,12 @@
     <main id="content" role="main">
 
       <div class="member-profile-image-column">
-<!--         <p style="font-size:30px;text-align:center;">{{ page.name }}</p> -->
+        <p style="font-size:30px;text-align:center;">{{ page.name }}</p>
         <p style="text-align:center;">{{ page.position}}</p>
 
         <img  src="{{page.image_path}}" alt=" ">
 
-        <p><b>Affiliations:</b>{{ page.affiliation }}</p>
+        <p>{{ page.affiliation }}</p>
         <p>{{ page.jointaffiliation }}</p>
         <p>{{ page.country }}</p>
         <p></p>
@@ -75,9 +75,8 @@
       </div>
 
       <div class="member-profile-text-column">
-        <h1>{{ page.name }}</h1>
-        <h2> Research Interests </h2>
-<!--         <h1>{{ page.title }}</h1> -->
+
+        <h1>{{ page.title }}</h1>
         <p style="text-align:center;">{{ page.keywords }}</p>
         {{ content }}
 
