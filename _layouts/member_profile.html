@@ -67,7 +67,8 @@
         <p></p>
         <p><b>Contact:</b><br>{{ page.email }}</p>
         <p></p>
-        <p><b>Website:</b><br>{{ page.website }}</p>
+        <a href="page.website">Personal Website</a>
+<!--         <p><b>Website:</b><br>{{ page.website }}</p> -->
         <p><b>ORCID:</b><br>{{ page.orcid }}</p>
         <p><b>LINKEDIN:</b><br>{{ page.linkedin }}</p>
         <p><b>Research gate:</b><br>{{ page.rgate }}</p>
@@ -76,10 +77,9 @@
       <div class="member-profile-text-column">
 
         <h1>{{ page.name }}</h1>
-        <p style="text-align:left;">{{ page.position}}</p> 
-        <p> style="text-align:left;">{{ page.affiliation }}</p>
-        
-        <p style="text-align:center;">{{ page.keywords }}</p>
+        <p> style="text-align:left;">{{ page.position}}</p> 
+        <p style="text-align:left;">{{ page.affiliation }}</p>
+        <p style="text-align:left;">{{ page.keywords }}</p>
         {{ content }}
 
         <!-- <p><b>Current Research Summary:</b> </p>
