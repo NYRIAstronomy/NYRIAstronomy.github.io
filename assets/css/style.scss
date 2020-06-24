@@ -498,6 +498,13 @@ footer {
   padding: 20px;
   width: 75%;
 }
+
+.member-profile-text-column h1{
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
 @media (max-width: 600px) {
   .member-profile-image-column, .member-profile-text-column {
     width: 100%;
@@ -538,11 +545,7 @@ footer {
 .post-short {
   text-align: justify;
 }
-.post h1{
-  padding-top: 50px;
-  padding-bottom: 25px;
-  text-align: left;
-}
+
 
 /* images */
 .stand-alone-image {
