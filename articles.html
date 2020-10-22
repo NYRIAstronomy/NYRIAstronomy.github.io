@@ -2,66 +2,40 @@
 layout: default
 title:  "Articles"
 permalink: /articles/
-
 ---
 
 <style>
-
-#blog{
-	background-color:#f6f6f6;
+.link-icon-container {
+  position: relative;
+  height: 171px;
+  width: auto;
+  margin: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  opacity: 0.75;
 }
-
-
-#blog .card-block{
-    padding: 10px;
+.link-icon-container img{
+  height: 100%;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: .5s ease;
 }
-
-#blog .card{
-    background-color: #FFF;
-    border: 1px solid #eceaea;
-    margin: 20px 0px;
-}
-
-.btn.btn-default {
-    background-color: #5db4c0;
-    color: #fff;
-    border-radius: 0;
-    border: none;
-    padding: 13px 20px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-
 </style>
-
-<body>
-
-<!------ Include the above in your HEAD tag ---------->
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
-
-
-<!--
-    instagram: www.instagram.com/programmingtutorial
-    site: programlamadersleri.net
--->
 
 
 <h1>Articles</h1>
 
+
 <div class="flexible-matrix">
-  {% for posts in site.posts reversed %}
+  {% for workshop in site.workshops reversed %}
     {% if forloop.first %}
       {% continue %}
     {% endif %}
       <div class="link-icon-container">
-        <a href="{{ posts.url }}">
-          <img src="{{ posts.image }}" alt="">
-          <div class="link-box-text">{{ posts.year }}<br>{{ posts.location }}</div>
+        <a href="{{ workshop.url }}">
+          <img src="{{ workshop.image }}" alt="">
+          <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
         </a>
       </div>
   {% endfor %}
