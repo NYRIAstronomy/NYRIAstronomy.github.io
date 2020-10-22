@@ -20,6 +20,33 @@ permalink: /articles/
   object-fit: cover;
   transition: .5s ease;
 }
+  
+
+.block {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+
+.container {
+  text-align: center;
+}
+
+.block img {
+  border-radius: 4px;
+  width: 200px;
+}
+
+.block p {
+  text-align: left;
+  position: relative;
+  left: 5px;
+}  
+  
+  
 </style>
 
 
@@ -27,8 +54,27 @@ permalink: /articles/
 <p>
 We have launched articles by NYRIA, where members can write articles and share their knowledge, interests and experiences. 
 </p>
-TEST
+
+
 <div class="flexible-matrix">
+ <div class="container">
+  <div class="block">
+<img src="/assets/img/articles/oct2020/keyimage.png"  >
+<p>Testsdkldgkjdfg  </p>
+</div>
+</div> 
+  
+  
+  
+
+</div>
+
+
+
+
+
+
+<!-- <div class="flexible-matrix">
   {% for workshop in site.articles reversed %}
     {% if forloop.first %}
       {% continue %}
@@ -40,4 +86,4 @@ TEST
         </a>
       </div>
   {% endfor %}
-</div>
+</div> -->
