@@ -28,14 +28,14 @@ permalink: /articles/
 
 
 <div class="flexible-matrix">
-  {% for workshop in site.workshops reversed %}
+  {% for article in site.articles reversed %}
     {% if forloop.first %}
       {% continue %}
     {% endif %}
       <div class="link-icon-container">
-        <a href="{{ workshop.url }}">
-          <img src="{{ workshop.image }}" alt="">
-          <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
+        <a href="{{ article.url }}">
+          <img src="{{ article.image }}" alt="">
+          <div class="link-box-text">{{ article.date }}<br>{{ article.title }}</div>
         </a>
       </div>
   {% endfor %}
