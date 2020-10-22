@@ -54,7 +54,7 @@ permalink: /posts/
 <h1>Articles</h1>
 
 <div class="flexible-matrix">
-  {% for workshop in site.workshops reversed %}
+  {% for posts in site.posts reversed %}
     {% if forloop.first %}
       {% continue %}
     {% endif %}
