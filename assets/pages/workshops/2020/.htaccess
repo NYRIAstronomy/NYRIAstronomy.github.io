@@ -1,4 +1,6 @@
+<Files videos.html> 
 AuthType Basic 
 AuthName "My Protected Folder" 
 AuthUserFile https://github.com/NYRIAstronomy/NYRIAstronomy.github.io/blob/master/.htpasswd
 require valid-user
+</Files>
