@@ -66,80 +66,6 @@ There are those moments, when the walls come down, the formalities disappear and
  --> 
 <style>
 
-.article-box {
-  position: relative;
-  height: 171px;
-  margin: 20px;
-
-  border: 1px solid #bbb;
-  border-radius: 10px;
-}
-.article-box img {
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  opacity: 0.8;
-}
-.article-box img:hover {
-  opacity: 0.5;
-}
-.article-box-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-
-  min-width: 2cm;
-  font-weight: bold;
-
-  opacity: 0.9;
-
-  background-color: #BF360C;
-  border: 10px solid #BF360C;
-  border-radius: 10px;
-}
-.link-box a {
-  color: white;
-  text-decoration: none;
-}
-.link-icon-container {
-  position: relative;
-  height: 171px;
-  width: 171px;
-  margin: 20px;
-  border: 1px solid #bbb;
-  border-radius: 50%;
-  opacity: 0.75;
-}
-.article-icon-container img{
-  height: 100%;
-  border: 1px solid #bbb;
-  border-radius: 50%;
-  object-fit: cover;
-  transition: .5s ease;
-}
-.article-icon-container .text-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  min-width: 2cm;
-  font-weight: bold;
-  background-color: red;
-  border: 10px solid red;
-  border-radius: 10px;
-}
-.article-icon-container a {
-  color: white;
-  text-decoration: none;
-}
-.article-icon-container:hover {
-  opacity: 1.0;
-  transform: scale(1.2);
-}
-
 /* popup modal */
 .popup-modal {
 	max-width: 350px;
@@ -147,6 +73,15 @@ There are those moments, when the walls come down, the formalities disappear and
 	position: relative;
 	margin: 0 auto;
 }
+	
+.popup-modal img {
+	max-width: 350px;
+	background: #fff;
+	position: relative;
+	margin: 0 auto;
+}	
+	
+	
 .popup-modal .description-box { padding: 12px 36px 18px 36px; }
 .popup-modal .description-box h4 {
    font: 15px/24px 'opensans-bold', sans-serif;
@@ -196,7 +131,7 @@ We have launched articles by NYRIA, where members can write articles and share t
 
 
 <div class="flexible-matrix">
-<div id="modal-H01" class="popup-modal mfp-hide">
+<div id="modal-H01" class="popup-modal">
 
   <img src="/assets/img/articles/apr2021/keyimage.png" alt="" />
 
