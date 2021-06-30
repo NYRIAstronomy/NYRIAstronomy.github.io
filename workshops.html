@@ -44,7 +44,7 @@ permalink: /workshops/
 </div> -->
 
  <div class="" style="object-fit: contain">
-<!--   <a href="/../workshops/2020/"> -->
+  <a href="/../workshops/2021/">
     <img src="/assets/img/banner_2021.png" alt="" style="width:100%">
   </a>
 </div> 
@@ -52,7 +52,7 @@ permalink: /workshops/
 
 <h1>Past NYRIA workshops</h1>
 
-<div class="flexible-matrix">
+<!-- <div class="flexible-matrix">
   {% for workshop in site.workshops reversed %}
     {% if forloop.first %}
       {% continue %}
@@ -65,3 +65,19 @@ permalink: /workshops/
       </div>
   {% endfor %}
 </div>
+ -->
+
+
+<div class="flexible-matrix">
+  {% for workshop in site.workshops reversed %}
+
+      <div class="link-icon-container">
+        <a href="{{ workshop.url }}">
+          <img src="{{ workshop.image }}" alt="">
+          <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
+        </a>
+      </div>
+  {% endfor %}
+</div>
+ -->
+
