@@ -8,6 +8,10 @@ plugins:
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
+
+baseurl: "" # only need if your site is hosted as a subdomain, e.g. on GH Pages
+url: "" # url of your site
+
 collections:
   articles:
     output          : true
