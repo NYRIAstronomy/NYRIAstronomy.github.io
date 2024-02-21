@@ -15,6 +15,8 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/uti
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 
+import { defineConfig } from 'astro/config'
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const whenExternalScripts = (items = []) =>
@@ -25,8 +27,8 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
-  site: SITE.site,
-  base: SITE.base,
+  site: 'https://NYRIAsite.github.io',
+  base: '/my-repo',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
