@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: NYRIA
+  site: 'https://bhavesh012.github.io/NYRIAsite/'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: NYRIA
+    template: '%s — Astrowind'
+  description: "\U0001F680 Network of Young Researchers in Instrumentation"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: NYRIA
     images:
       - url: '~/assets/images/default.png'
         width: 1200

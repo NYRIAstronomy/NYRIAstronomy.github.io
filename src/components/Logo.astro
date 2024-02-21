@@ -2,6 +2,13 @@
 import { SITE } from '~/utils/config';
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 {SITE?.name}
+<!-- <span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white bg-cover bg-[url(~/assets/images/NYRIA_logo_4k.png)] w-5 h-5">
+   {SITE?.name}
+</span> -->
+
+<span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right bg-[url(~/assets/images/NYRIA_logo_4k.svg)]"></span>
+<span class="w-5 h-5 md:w-6 md:h-6 text-3xl rounded-sm -mt-3">
+{SITE?.name}
 </span>
+
+<!-- <img src="~/assets/images/hero.png", width="100" /> -->
