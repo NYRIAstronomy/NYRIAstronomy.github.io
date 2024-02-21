@@ -27,8 +27,8 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
-  site: 'https://NYRIAsite.github.io',
-  base: '/my-repo',
+  site: 'https://bhavesh012.github.io',
+  base: '/NYRIAsite',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
