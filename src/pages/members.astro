@@ -15,10 +15,7 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
-    }}
+
   >
     <Fragment slot="title">
       Members 
@@ -27,9 +24,21 @@ const metadata = {
     <Fragment slot="subtitle">
       NYRIA is a network of young astronomers from all around the world, working in different areas of astronomical instrumention. Here you can find members as according to their country, research areas and more. The map illustrates the current reach of NYRIA. To search for individual members by country, research area and institute please click on the desired link.
     </Fragment>
+
+
+    <Fragment slot="subtitle">
+
+        <iframe aria-label="World choropleth map" id="datawrapper-chart-0ZLOT" src="//datawrapper.dwcdn.net/0ZLOT/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+        <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+      
+      
+  </Fragment>
+
   </Hero>
 
   <!-- Stats Widget ****************** -->
+
+  <!-- TODO: Change this section! -->
 
   <Stats
     title="Statistics about us"
@@ -42,8 +51,7 @@ const metadata = {
   />
 
   <!-- Features3 Widget ************** -->
-
-  <Features3
+  <!-- <Features3
     title="Our templates"
     subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
     columns={3}
@@ -68,10 +76,10 @@ const metadata = {
         icon: 'tabler:template',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features3 Widget ************** -->
-
+<!-- 
   <Features3
     columns={3}
     isAfterContent={true}
@@ -117,11 +125,11 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'Colorful Image',
     }}
-  />
+  /> -->
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <!-- <Steps2
     title="Our values"
     subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
     items={[
@@ -141,11 +149,11 @@ const metadata = {
           'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
       },
     ]}
-  />
+  /> -->
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <!-- <Steps2
     title="Achievements"
     subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
     isReversed={true}
@@ -172,11 +180,11 @@ const metadata = {
         icon: 'tabler:award',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Our locations"
     tagline="Find us"
     columns={4}
@@ -198,11 +206,11 @@ const metadata = {
         description: '3456 Lorem Ipsum St, 34567, São Paulo',
       },
     ]}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Technical Support"
     tagline="Contact us"
     columns={2}
@@ -219,6 +227,6 @@ const metadata = {
           'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
         icon: 'tabler:headset',
       },
-    ]}
-  />
+    ]} -->
+  /> -->
 </Layout>
