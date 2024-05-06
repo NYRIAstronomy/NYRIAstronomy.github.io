@@ -39,12 +39,15 @@ permalink: /workshops/
 
 
  <div class="" style="object-fit: contain">
+   {% assign coming_workshop = site.workshops | where: "year", "2024" %}
+   {% for workshop in coming_workshops %}
       <div class="link-icon-container">
-        <a href="../workshops/2024/">
-          <img src="/assets/img/workshops/2024/ucsd.jpg" alt="">
-          <div class="link-box-text">2024<br>San Diego, California</div>
+        <a href={{workshop.url}}}>
+          <img src={{workshop.image}} alt="">
+          <div class="link-box-text">{{workshop.year}}<br>{{workshop.location}}</div>
         </a>
       </div>
+   {% endfor %}
 </div>
 
 
