@@ -42,9 +42,9 @@ permalink: /workshops/
    {% assign coming_workshops = site.workshops | where: "year", "2024" %}
    {% for workshop in coming_workshops %}
       <div class="link-icon-container">
-        <a href={{workshop.url}}}>
-          <img src={{workshop.image}} alt="">
-          <div class="link-box-text">{{workshop.year}}<br>{{workshop.location}}</div>
+        <a href={{ workshop.url }}>
+          <img src={{ workshop.image }} alt="">
+          <div class="link-box-text">{{ workshop.year }}<br>{{ workshop.location }}</div>
         </a>
       </div>
    {% endfor %}
