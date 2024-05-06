@@ -39,7 +39,7 @@ permalink: /workshops/
 
 
  <div class="" style="object-fit: contain">
-   {% assign coming_workshop = site.workshops | where: "year", "2024" %}
+   {% assign coming_workshops = site.workshops | where: "year", "2024" %}
    {% for workshop in coming_workshops %}
       <div class="link-icon-container">
         <a href={{workshop.url}}}>
