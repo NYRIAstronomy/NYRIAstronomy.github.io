@@ -1,7 +1,9 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+// @import "{{ site.theme }}";
 * {
   box-sizing: border-box;
 }
@@ -10,6 +12,7 @@
 /* ---------- general design: body ---------- */
 html, body {
   height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -18,6 +21,7 @@ header {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  align-items: center;
   //z-index: 10;
   //top: 0;
   //left: 0;
